@@ -641,7 +641,26 @@ class MainActivity : Activity() {
     }
 
     /** Read-only offline vision. Fills manual fields only after a COMPLETE verified observation. */
-    private fun recognizeCardsFromFrame() {
+    private fun recognizeCardsFromFrame(attempt: Int = 0) {
+        if (OperatorStopStore.isStopped(this) || !FrameStore.isCapturing) {
+            aiResult.text = "Сначала разрешите сессию и захват экрана"
+            return
+        }
+        // The 960px preset produces only ~443px width on this phone and the CV
+        // reader deliberately rejects it. Request a NEW full-detail frame first.
+        if (FrameStore.latest?.profile != 3) {
+            CaptureOptions.profile = 3
+            if (attempt >= 25) {
+                aiResult.text = "Нет нового кадра высокого качества. Обновите изображение захватываемого экрана."
+                return
+            }
+            val generation = recognitionGeneration.get()
+            aiResult.text = "Ожидаю новый кадр 1536px для распознавания карт…"
+            uiHandler.postDelayed({
+                if (!isDestroyed && generation == recognitionGeneration.get()) recognizeCardsFromFrame(attempt + 1)
+            }, 200L)
+            return
+        }
         val snapshot = FrameStore.latest
         val frame = snapshot?.jpeg?.clone()
         if (frame == null || !FrameStore.isCapturing || OperatorStopStore.isStopped(this)) {
