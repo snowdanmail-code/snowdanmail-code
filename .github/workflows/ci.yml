@@ -41,6 +41,8 @@ jobs:
         run: python3 tools/android_preflight.py --strict
       - name: Assemble and verify debug APK (signature, package, version, SHA-256)
         run: bash tools/build_android_debug.sh
+      - name: Install local CV server dependencies
+        run: python3 -m pip install -r server/requirements-vision.txt
       - name: Enable KVM for Android emulator
         run: |
           echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
@@ -54,7 +56,7 @@ jobs:
           arch: x86_64
           profile: pixel_6
           disable-animations: true
-          script: gradle -p android --no-daemon :app:connectedDebugAndroidTest
+          script: bash tools/device_smoke.sh
       - name: Save test reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -63,6 +65,7 @@ jobs:
           path: |
             android/app/build/reports/
             android/app/build/outputs/androidTest-results/
+            artifacts/Android16-v2.12-launch.png
           retention-days: 30
       - uses: actions/upload-artifact@v4
         with:

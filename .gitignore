@@ -16,10 +16,8 @@ __pycache__/
 *.token
 lab_auth/.private/
 
-# Private captures and local credentials
-/datasets/
-/server/demo-registry/
-/lab_auth/.private/
-*.vault
-*.token
+.private/
+.venv-cv/
+datasets/
+server/demo-registry/
 QA_*.log
