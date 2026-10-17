@@ -18,7 +18,7 @@ jobs:
       - run: python -m unittest discover -s lab_auth/tests -q
       - run: python -m unittest discover -s lab_strategy/tests -q
       - run: python -m unittest discover -s tools -p "test_*.py" -q
-      # Full server tests use private screen fixtures and are run locally.
+      # Full server tests with private frames are executed locally, not uploaded.
   android-debug:
     runs-on: ubuntu-latest
     timeout-minutes: 45
@@ -41,13 +41,35 @@ jobs:
         run: python3 tools/android_preflight.py --strict
       - name: Assemble and verify debug APK (signature, package, version, SHA-256)
         run: bash tools/build_android_debug.sh
+      - name: Enable KVM for Android emulator
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Install and test on Android 16
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 36
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          disable-animations: true
+          script: gradle -p android --no-daemon :app:connectedDebugAndroidTest
+      - name: Save test reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v2.12-android-test-reports
+          path: |
+            android/app/build/reports/
+            android/app/build/outputs/androidTest-results/
+          retention-days: 30
       - uses: actions/upload-artifact@v4
         with:
-          name: ai-remote-control-v2.11-debug-apk
+          name: ai-remote-control-v2.12-debug-apk
           path: |
-            artifacts/AI-Remote-Control-v2.11-PLAYER-LAB.apk
-            artifacts/AI-Remote-Control-v2.11-PLAYER-LAB.apk.sha256
-            artifacts/APK_ATTESTATION_v2.11.json
-          retention-days: 7
+            artifacts/AI-Remote-Control-v2.12-PLAYER-LAB.apk
+            artifacts/AI-Remote-Control-v2.12-PLAYER-LAB.apk.sha256
+            artifacts/APK_ATTESTATION_v2.12.json
+          retention-days: 30
           if-no-files-found: error
-

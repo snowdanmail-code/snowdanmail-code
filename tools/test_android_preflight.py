@@ -39,8 +39,8 @@ class AndroidPreflightTests(unittest.TestCase):
 
     def test_baseline_version_and_gate_are_pinned(self):
         build = (ROOT / 'android/app/build.gradle.kts').read_text()
-        self.assertIn('versionCode = 31', build)
-        self.assertIn('versionName = "2.11.0-persistent-stop"', build)
+        self.assertIn('versionCode = 32', build)
+        self.assertIn('versionName = "2.12.0-card-auto-fill"', build)
         self.assertIn('EXTERNAL_GAME_ACTIONS_ENABLED", "false"', build)
         self.assertIn('apk_release_gate.py', (ROOT / 'tools/build_android_debug.sh').read_text())
 
@@ -69,7 +69,7 @@ class AndroidPreflightTests(unittest.TestCase):
             target = Path(t)
             make_fixture(target)
             p = target / 'windows/03_CONNECT_PHONE.ps1'
-            p.write_text(p.read_text().replace('AI-Remote-Control-v2.11-PLAYER-LAB.apk',
+            p.write_text(p.read_text().replace('AI-Remote-Control-v2.12-PLAYER-LAB.apk',
                                                     'AI-Remote-Control-v2.6-READONLY.apk'))
             result = audit(target)
             self.assertEqual(result['status'], 'FAIL')

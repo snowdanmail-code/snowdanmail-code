@@ -29,8 +29,8 @@ def audit(root: Path = ROOT) -> dict:
         return {'status': 'FAIL', 'errors': errors, 'warnings': warnings}
 
     gradle = config.read_text(encoding='utf-8')
-    if not re.search(r'versionCode\s*=\s*31\b', gradle):
-        errors.append('Incorrect versionCode; expected 31')
+    if not re.search(r'versionCode\s*=\s*32\b', gradle):
+        errors.append('Incorrect versionCode; expected 32')
     if not re.search(r'minSdk\s*=\s*29\b', gradle):
         errors.append('Incorrect minSdk; expected 29')
     if not re.search(r'compileSdk\s*=\s*35\b', gradle):
@@ -39,7 +39,7 @@ def audit(root: Path = ROOT) -> dict:
         errors.append('targetSdk is not 35')
     if not re.search(r'EXTERNAL_GAME_ACTIONS_ENABLED"\s*,\s*"false"', gradle):
         errors.append('Lab build does not hard-disable external game actions')
-    if not re.search(r'versionName\s*=\s*"2\.11\.0-persistent-stop"', gradle):
+    if not re.search(r'versionName\s*=\s*"2\.12\.0-card-auto-fill"', gradle):
         errors.append('Incorrect app lab version')
 
     tree = ET.parse(manifest)
@@ -114,7 +114,7 @@ def audit(root: Path = ROOT) -> dict:
             errors.append('Build CI missing: ' + expected)
     if (root / 'android' / 'gradle' / 'wrapper' / 'gradle-wrapper.jar').exists() is False:
         warnings.append('No gradle-wrapper.jar; CI uses setup-gradle 8.9; for local use install Gradle 8.9')
-    expected_apk = 'AI-Remote-Control-v2.11-PLAYER-LAB.apk'
+    expected_apk = 'AI-Remote-Control-v2.12-PLAYER-LAB.apk'
     for script in (build_ps, connect_ps):
         if expected_apk not in script.read_text(encoding='utf-8'):
             errors.append('Windows script APK version mismatch: ' + script.name)
@@ -128,7 +128,7 @@ def audit(root: Path = ROOT) -> dict:
     if 'OperatorStopStore.isStopped(this)' not in activity:
         errors.append('Android activity does not check persistent STOP on resume')
 
-    if 'ai-remote-control-v2.11-debug-apk' not in yml:
+    if 'ai-remote-control-v2.12-debug-apk' not in yml:
         errors.append('CI artifact version mismatch')
     build_script = root / 'tools' / 'build_android_debug.sh'
     if not build_script.is_file() or 'apk_release_gate.py' not in build_script.read_text(encoding='utf-8'):

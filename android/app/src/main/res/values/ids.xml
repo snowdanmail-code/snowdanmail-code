@@ -1,1 +1,14 @@
-<resources><item name="testTarget" type="id" /></resources>
+<resources>
+    <item name="testTarget" type="id" />
+    <item name="safeRoot" type="id" />
+    <item name="emergencyStop" type="id" />
+    <item name="armSession" type="id" />
+    <item name="backendUrl" type="id" />
+    <item name="deviceToken" type="id" />
+    <item name="heroCards" type="id" />
+    <item name="boardCards" type="id" />
+    <item name="outCards" type="id" />
+    <item name="aiResult" type="id" />
+    <item name="captureStatus" type="id" />
+    <item name="recognizeCards" type="id" />
+</resources>

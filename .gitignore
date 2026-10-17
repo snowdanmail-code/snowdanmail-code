@@ -16,7 +16,10 @@ __pycache__/
 *.token
 lab_auth/.private/
 
-# Private screen captures and game data remain local
-datasets/
-server/demo-registry/
+# Private captures and local credentials
+/datasets/
+/server/demo-registry/
+/lab_auth/.private/
+*.vault
+*.token
 QA_*.log

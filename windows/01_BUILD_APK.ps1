@@ -4,7 +4,7 @@ param([string]$ProjectRoot = (Split-Path -Parent $PSScriptRoot))
 $ErrorActionPreference = 'Stop'
 Set-StrictMode -Version Latest
 $ProjectRoot = (Resolve-Path -LiteralPath $ProjectRoot).Path
-Write-Host '=== AI Remote Control v2.11 (APK VERIFICATION) ==='
+Write-Host '=== AI Remote Control v2.12 (APK VERIFICATION) ==='
 if (-not (Get-Command java.exe -ErrorAction SilentlyContinue)) { throw 'Java JDK 17 not found. Install Java 17 before building.' }
 $versionText = (& java.exe -version 2>&1 | Out-String)
 if ($versionText -notmatch 'version "17\.') { throw "Build requires Java 17. Found: $versionText" }
@@ -32,9 +32,9 @@ try {
 $Source = Join-Path $ProjectRoot 'android\app\build\outputs\apk\debug\app-debug.apk'
 if (-not (Test-Path $Source)) { throw 'Gradle finished but app-debug.apk is missing' }
 $DestDir = Join-Path $ProjectRoot 'artifacts'; New-Item -Force -ItemType Directory $DestDir | Out-Null
-$Dest = Join-Path $DestDir 'AI-Remote-Control-v2.11-PLAYER-LAB.apk'
+$Dest = Join-Path $DestDir 'AI-Remote-Control-v2.12-PLAYER-LAB.apk'
 Copy-Item -LiteralPath $Source -Destination $Dest -Force
-& $python.Source (Join-Path $ProjectRoot 'tools\apk_release_gate.py') --apk $Dest --out (Join-Path $DestDir 'APK_ATTESTATION_v2.11.json')
+& $python.Source (Join-Path $ProjectRoot 'tools\apk_release_gate.py') --apk $Dest --out (Join-Path $DestDir 'APK_ATTESTATION_v2.12.json')
 if ($LASTEXITCODE -ne 0) { throw 'APK verification failed; do not install' }
 $Hash = Get-FileHash -LiteralPath $Dest -Algorithm SHA256
 Write-Host '=== VERIFIED APK READY ===' -ForegroundColor Green

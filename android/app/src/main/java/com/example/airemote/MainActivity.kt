@@ -14,6 +14,7 @@ import android.os.Looper
 import android.provider.Settings
 import android.text.InputType
 import android.view.ViewGroup
+import android.view.WindowInsets
 import android.widget.*
 import org.json.JSONObject
 import org.json.JSONArray
@@ -35,6 +36,9 @@ class MainActivity : Activity() {
     private lateinit var aiResult: TextView
     private lateinit var preview: ImageView
     private lateinit var backend: EditText
+    private lateinit var heroCardsInput: EditText
+    private lateinit var boardCardsInput: EditText
+    private lateinit var outCardsInput: EditText
     private lateinit var deviceToken: EditText
     private lateinit var testTarget: Button
     private lateinit var expectedGameApp: EditText
@@ -42,6 +46,8 @@ class MainActivity : Activity() {
     @Volatile private var tapCount = 0
     private var readOnlyStartPending = false
     private val uiHandler = Handler(Looper.getMainLooper())
+    private val recognitionGeneration = AtomicInteger(0)
+    private val recognitionBusy = AtomicBoolean(false)
     private val agentRunning = AtomicBoolean(false)
     private val cycleVersion = AtomicInteger(0)
     @Volatile private var appForeground = true
@@ -53,8 +59,23 @@ class MainActivity : Activity() {
             setPadding(24, 28, 24, 30)
         }
         // Persistent emergency controls OUTSIDE the scrolling settings/form.
-        val root = LinearLayout(this).apply { orientation = LinearLayout.VERTICAL }
+        val root = LinearLayout(this).apply {
+            id = R.id.safeRoot
+            orientation = LinearLayout.VERTICAL
+            setOnApplyWindowInsetsListener { view, insets ->
+                if (Build.VERSION.SDK_INT >= 30) {
+                    val safe = insets.getInsets(WindowInsets.Type.systemBars() or WindowInsets.Type.displayCutout())
+                    view.setPadding(safe.left, safe.top, safe.right, safe.bottom)
+                } else {
+                    @Suppress("DEPRECATION")
+                    view.setPadding(insets.systemWindowInsetLeft, insets.systemWindowInsetTop,
+                        insets.systemWindowInsetRight, insets.systemWindowInsetBottom)
+                }
+                insets
+            }
+        }
         val stop = Button(this).apply {
+            id = R.id.emergencyStop
             text = "СТОП — ПРЕКРАТИТЬ ВСЕ ДЕЙСТВИЯ"
             textSize = 18f
             setBackgroundColor(android.graphics.Color.rgb(160, 25, 25))
@@ -63,6 +84,7 @@ class MainActivity : Activity() {
         }
         root.addView(stop, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT))
         val arm = Button(this).apply {
+            id = R.id.armSession
             text = "РАЗРЕШИТЬ НОВУЮ ТЕСТОВУЮ СЕССИЮ"
             setOnClickListener {
                 if (!OperatorStopStore.armFromOperator(this@MainActivity)) {
@@ -78,6 +100,7 @@ class MainActivity : Activity() {
         val scroller = ScrollView(this).apply { addView(layout) }
         root.addView(scroller, LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, 0, 1f))
         setContentView(root)
+        root.requestApplyInsets()
         fun headline(value: String) = TextView(this).apply {
             text = value
             textSize = 20f
@@ -89,7 +112,7 @@ class MainActivity : Activity() {
             setOnClickListener { action() }
             layout.addView(this)
         }
-        headline("AI Remote Control v2.11 — ИИ-игрок: проверка APK")
+        headline("AI Remote Control v2.12 — ИИ-игрок: проверка APK")
         layout.addView(TextView(this).apply {
             text = "Цель: ИИ-игрок самостоятельно принимает решения и выполняет игровые действия с бесплатными условными фишками. " +
                 "В текущем APK-кандидате действия во внешнем 1win пока отключены; распознавание можно испытывать, " +
@@ -102,6 +125,7 @@ class MainActivity : Activity() {
             Toast.makeText(this, "Журнал удалён", Toast.LENGTH_SHORT).show()
         }
         status = TextView(this).apply {
+            id = R.id.captureStatus
             text = "Захват выключен"
             layout.addView(this)
         }
@@ -135,14 +159,16 @@ class MainActivity : Activity() {
             layout.addView(this)
         }
         headline("Связь с сервером ИИ")
-        layout.addView(TextView(this).apply { text = "URL сервера (HTTPS либо локальный адрес в DEBUG):" })
+        layout.addView(TextView(this).apply { text = "URL работающего сервера. 127.0.0.1 — сам телефон; для сервера на ПК нужен USB и adb reverse. Один адрес сервер не запускает. HTTPS поддерживается." })
         backend = EditText(this).apply {
             setSingleLine(true)
-            setText("http://127.0.0.1:8787")
+            id = R.id.backendUrl
+            setText(getPreferences(Context.MODE_PRIVATE).getString("server_url", "http://127.0.0.1:8787"))
             layout.addView(this)
         }
         layout.addView(TextView(this).apply { text = "Секрет устройства (ARC_DEVICE_TOKEN):" })
         deviceToken = EditText(this).apply {
+            id = R.id.deviceToken
             setSingleLine(true)
             inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
             hint = "Введите токен сервера"
@@ -163,17 +189,20 @@ class MainActivity : Activity() {
             text = "Введите карты вручную: A K Q J T 9..2 + масть c/d/h/s. " +
                 "Результат — вероятность увидеть заданную карту, НЕ шанс победы и НЕ совет по ставке."
         })
-        val heroCardsInput = EditText(this).apply {
+        heroCardsInput = EditText(this).apply {
+            id = R.id.heroCards
             hint = "2 карты: Ah Kh"
             setSingleLine(true)
             layout.addView(this)
         }
-        val boardCardsInput = EditText(this).apply {
-            hint = "Флоп или тёрн: Qh Jh 2c"
+        boardCardsInput = EditText(this).apply {
+            id = R.id.boardCards
+            hint = "Карты стола (0, 3, 4 или 5): Qh Jh 2c"
             setSingleLine(true)
             layout.addView(this)
         }
-        val outCardsInput = EditText(this).apply {
+        outCardsInput = EditText(this).apply {
+            id = R.id.outCards
             hint = "Ауты (неизвестные карты): 3h 4h 5h"
             setSingleLine(true)
             layout.addView(this)
@@ -182,11 +211,23 @@ class MainActivity : Activity() {
             calculateOfflineDrawOdds(heroCardsInput.text.toString(),
                 boardCardsInput.text.toString(), outCardsInput.text.toString())
         }
+        Button(this).apply {
+            id = R.id.recognizeCards
+            text = "3. РАСПОЗНАТЬ КАРТЫ И ЗАПОЛНИТЬ ПОЛЯ"
+            setOnClickListener { recognizeCardsFromFrame() }
+            layout.addView(this)
+        }
+        layout.addView(TextView(this).apply {
+            text = "Заполняются только подтверждённые карты руки и стола. " +
+                "Ауты вычисляются отдельно; угадывать их по фотографии нельзя. " +
+                "Для распознавания нужен работающий сервер /vision/cards."
+        })
         button("2. Проанализировать 1 кадр через API") { analyzeOneFrame() }
         button("2A. Распознать экран покера (лобби / бай-ин / стол)") {
             analyzeOneFrame("/poker/screen", "poker_screen")
         }
         aiResult = TextView(this).apply {
+            id = R.id.aiResult
             text = "Результат GPT или DEMO появится здесь. Автожесты — только по тестовой цели."
             setPadding(0, 12, 0, 18)
             layout.addView(this)
@@ -215,7 +256,7 @@ class MainActivity : Activity() {
             layout.addView(this)
         }
         button("ВНЕШНИЕ ДЕЙСТВИЯ В LAB ОТКЛЮЧЕНЫ") {
-            aiResult.text = "Лабораторная сборка v2.11: внешнее управление отключено"
+            aiResult.text = "Лабораторная сборка v2.12: внешнее управление отключено"
         }
         button("ЛОКАЛЬНЫЙ ТЕСТ решения Raise (80 условных фишек)") {
             val sample = PlayChipTurnGuard.Turn("local-test-hand", 1L, 120L, true, true, true,
@@ -599,6 +640,80 @@ class MainActivity : Activity() {
         }
     }
 
+    /** Read-only offline vision. Fills manual fields only after a COMPLETE verified observation. */
+    private fun recognizeCardsFromFrame() {
+        val snapshot = FrameStore.latest
+        val frame = snapshot?.jpeg?.clone()
+        if (frame == null || !FrameStore.isCapturing || OperatorStopStore.isStopped(this)) {
+            aiResult.text = "Сначала разрешите сессию, захват и получите кадр"
+            return
+        }
+        val endpoint = validEndpoint()
+        if (endpoint == null) {
+            aiResult.text = "Нужен работающий сервер (127.0.0.1 — это сам телефон) и токен от 12 символов. " +
+                "Проверка качества не распознаёт карты."
+            return
+        }
+        if (!recognitionBusy.compareAndSet(false, true)) return
+        val generation = recognitionGeneration.get()
+        val (base, secret) = endpoint
+        aiResult.text = "Локальное распознавание кадра без GPT…"
+        thread(name = "ReadOnlyCardRecognition", isDaemon = true) {
+            var fill: CardAutoFill.Cards? = null
+            val result = try {
+                val conn = (URL("$base/vision/cards").openConnection() as HttpURLConnection).apply {
+                    requestMethod = "POST"
+                    setRequestProperty("Content-Type", "application/json")
+                    setRequestProperty("X-Device-Token", secret)
+                    connectTimeout = 5000
+                    readTimeout = 15000
+                    doOutput = true
+                }
+                try {
+                    val payload = JSONObject().apply {
+                        put("request", "vision_cards")
+                        put("image_base64", Base64.getEncoder().encodeToString(frame))
+                        put("screen_state", "live_table")
+                    }
+                    conn.outputStream.use { it.write(payload.toString().toByteArray(Charsets.UTF_8)) }
+                    val code = conn.responseCode
+                    val stream = if (code in 200..299) conn.inputStream else conn.errorStream
+                    val json = JSONObject(stream?.bufferedReader(Charsets.UTF_8)?.use { it.readText() } ?: "{}")
+                    if (code !in 200..299) {
+                        "Сервер вернул HTTP $code: ${json.optString("error", "ошибка")}"
+                    } else {
+                        fun values(name: String): List<String> {
+                            val arr = json.optJSONArray(name) ?: return emptyList()
+                            return (0 until arr.length()).map { arr.optString(it, "") }
+                        }
+                        fill = CardAutoFill.checked(
+                            json.optString("quality"), json.optString("screen_state"),
+                            values("hero_cards"), values("board_cards"))
+                        if (fill == null) {
+                            "Карты не подтверждены: ${json.optString("reason", "недостаточная точность")}. " +
+                                "Поля оставлены без изменений. Нужен более чёткий кадр."
+                        } else "Карты распознаны и проверены (локально, без GPT). Ауты не определялись."
+                    }
+                } finally { conn.disconnect() }
+            } catch (e: Exception) { "Не удалось распознать карты: ${e.message}. Проверьте сервер и токен." }
+            runOnUiThread {
+                recognitionBusy.set(false)
+                if (isDestroyed || generation != recognitionGeneration.get() || OperatorStopStore.isStopped(this)) return@runOnUiThread
+                if (snapshot?.seq != FrameStore.latest?.seq) {
+                    aiResult.text = "Кадр изменился во время распознавания. Повторите запрос."
+                    return@runOnUiThread
+                }
+                if (fill != null && FrameStore.isCapturing && !OperatorStopStore.isStopped(this)) {
+                    heroCardsInput.setText(fill!!.hero.joinToString(" "))
+                    boardCardsInput.setText(fill!!.board.joinToString(" "))
+                    // Old outs belong to an earlier hand; never carry them into a new observation.
+                    outCardsInput.text.clear()
+                }
+                aiResult.text = result
+            }
+        }
+    }
+
     private fun analyzeOneFrame(path: String = "/analyze", task: String = "describe") {
         val frame = FrameStore.latestJpeg?.clone()
         if (frame == null || !FrameStore.isCapturing) {
@@ -679,6 +794,7 @@ class MainActivity : Activity() {
         // Store STOP before sending an intent: service and Accessibility must fail closed.
         OperatorStopStore.stop(this)
         readOnlyStartPending = false
+        recognitionGeneration.incrementAndGet()
         playChipTurnGuard.stop()
         stopAgentCycle("АВАРИЙНЫЙ СТОП: для новой сессии требуется ручное разрешение")
         // Stops MediaProjection, uploaders and any running session; clears stored screenshot.
@@ -701,6 +817,7 @@ class MainActivity : Activity() {
             endpoint.host in setOf("127.0.0.1", "10.0.2.2") && endpoint.port == 8787
         val secure = endpoint?.scheme == "https" && endpoint.host != null
         if ((!localhost && !secure) || endpoint?.rawUserInfo != null || secret.length < 12) return null
+        getPreferences(Context.MODE_PRIVATE).edit().putString("server_url", base).apply()
         return Pair(base, secret)
     }
 

@@ -18,10 +18,10 @@ import zipfile
 from pathlib import Path
 from typing import Callable
 
-PACKAGE = "com.example.airemote"
-VERSION_CODE = "31"
-VERSION_NAME = "2.11.0-persistent-stop"
-APK_NAME = "AI-Remote-Control-v2.11-PLAYER-LAB.apk"
+PACKAGE = "com.example.airemote.v212"
+VERSION_CODE = "32"
+VERSION_NAME = "2.12.0-card-auto-fill"
+APK_NAME = "AI-Remote-Control-v2.12-PLAYER-LAB.apk"
 SDK_BUILD_TOOLS = "35.0.0"
 
 

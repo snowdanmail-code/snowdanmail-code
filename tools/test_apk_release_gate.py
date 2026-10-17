@@ -9,7 +9,7 @@ from types import SimpleNamespace
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from apk_release_gate import ApkGateError, inspect, tool_path
 
-BADGING = ("package: name='com.example.airemote' versionCode='31' versionName='2.11.0-persistent-stop'\n"
+BADGING = ("package: name='com.example.airemote.v212' versionCode='32' versionName='2.12.0-card-auto-fill'\n"
            "sdkVersion:'29'\ntargetSdkVersion:'35'\napplication-debuggable\n")
 SIGNATURE = ("Verifies\nVerified using v1 scheme (JAR signing): false\n"
              "Verified using v2 scheme (APK Signature Scheme v2): true\n"
@@ -41,11 +41,11 @@ class GateTests(unittest.TestCase):
 
     def test_rejects_wrong_package(self):
         with self.assertRaises(ApkGateError):
-            inspect(self.apk, 'aapt', 'apksigner', runner=self.runner(badging=BADGING.replace('com.example.airemote', 'com.other.app')))
+            inspect(self.apk, 'aapt', 'apksigner', runner=self.runner(badging=BADGING.replace('com.example.airemote.v212', 'com.other.app')))
 
     def test_rejects_wrong_version(self):
         with self.assertRaises(ApkGateError):
-            inspect(self.apk, 'aapt', 'apksigner', runner=self.runner(badging=BADGING.replace("versionCode='31'", "versionCode='29'")))
+            inspect(self.apk, 'aapt', 'apksigner', runner=self.runner(badging=BADGING.replace("versionCode='32'", "versionCode='29'")))
 
     def test_rejects_non_debuggable(self):
         with self.assertRaises(ApkGateError):
