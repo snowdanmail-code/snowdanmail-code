@@ -1,0 +1,36 @@
+{
+  "project": "AI Remote Control GPT",
+  "package_version": "0.7.0",
+  "date": "2026-10-17",
+  "kind": "modular_registry_lab_implementation",
+  "baseline": "v0.6 source imported unchanged",
+  "tests": {
+    "count": 134,
+    "failures": 0,
+    "run_locally": true
+  },
+  "rollback_demo": {
+    "checkpoints": [
+      "cp-demo-baseline",
+      "cp-demo-sandbox"
+    ],
+    "active_after_test": "cp-demo-baseline",
+    "audit_chain_passed": true,
+    "depth_3plus_test": true
+  },
+  "scope": {
+    "android_apk_built": false,
+    "real_device_tested": false,
+    "live_openai_tested": false,
+    "real_money_autonomy_tested": false,
+    "rollback_switches_running_modules": false
+  },
+  "safety": "lab_only; read-only version endpoint; fail-closed unless trusted offline gate",
+  "known_gaps": [
+    "APK build tools unavailable",
+    "no real 1win table close sensor",
+    "no in-place running-code reload",
+    "no signed release manifest",
+    "no professional poker solver validated"
+  ]
+}

@@ -1,0 +1,4 @@
+# Offline read-only frame processing; pinned by compatible major lines.
+numpy>=2.0,<3
+opencv-python-headless>=4.10,<5
+Pillow>=10,<13

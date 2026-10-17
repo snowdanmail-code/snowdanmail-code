@@ -1,0 +1,23 @@
+{
+  "release": "1.4.0",
+  "base_release": "1.3.0",
+  "module": "arc_turn",
+  "features": [
+    "read_only_colour_cues",
+    "temporal_stability",
+    "read_only_fast_endpoint_integration"
+  ],
+  "tests": {
+    "server_unittest": 266,
+    "kotlin_frame_policy": 7
+  },
+  "limitations": [
+    "no_android_apk",
+    "no_live_gpt_api_test",
+    "no_ocr_turn_timer",
+    "no_independent_holdout",
+    "no_verified_player_turn",
+    "no_automated_money_bets"
+  ],
+  "session_automation_scheduled": false
+}

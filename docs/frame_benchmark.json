@@ -1,0 +1,143 @@
+{
+  "evaluated": 19,
+  "correct": 11,
+  "abstained": 8,
+  "results": [
+    {
+      "name": "1267.jpg",
+      "expected": "live_table",
+      "predicted": "unknown",
+      "distance": 0.0741,
+      "correct": false
+    },
+    {
+      "name": "1279.jpg",
+      "expected": "live_table",
+      "predicted": "unknown",
+      "distance": 0.0528,
+      "correct": false
+    },
+    {
+      "name": "1281.jpg",
+      "expected": "live_table",
+      "predicted": "live_table",
+      "distance": 0.0439,
+      "correct": true
+    },
+    {
+      "name": "1291.jpg",
+      "expected": "live_table",
+      "predicted": "unknown",
+      "distance": 0.0644,
+      "correct": false
+    },
+    {
+      "name": "1299.jpg",
+      "expected": "live_table",
+      "predicted": "live_table",
+      "distance": 0.0679,
+      "correct": true
+    },
+    {
+      "name": "1303.jpg",
+      "expected": "live_table",
+      "predicted": "unknown",
+      "distance": 0.0751,
+      "correct": false
+    },
+    {
+      "name": "1305.jpg",
+      "expected": "live_table",
+      "predicted": "unknown",
+      "distance": 0.0841,
+      "correct": false
+    },
+    {
+      "name": "1309.jpg",
+      "expected": "live_table",
+      "predicted": "live_table",
+      "distance": 0.0437,
+      "correct": true
+    },
+    {
+      "name": "1313.jpg",
+      "expected": "live_table",
+      "predicted": "live_table",
+      "distance": 0.0438,
+      "correct": true
+    },
+    {
+      "name": "1315.jpg",
+      "expected": "live_table",
+      "predicted": "unknown",
+      "distance": 0.0775,
+      "correct": false
+    },
+    {
+      "name": "1317.jpg",
+      "expected": "live_table",
+      "predicted": "unknown",
+      "distance": 0.0919,
+      "correct": false
+    },
+    {
+      "name": "1319.jpg",
+      "expected": "live_table",
+      "predicted": "live_table",
+      "distance": 0.0643,
+      "correct": true
+    },
+    {
+      "name": "1337.jpg",
+      "expected": "history",
+      "predicted": "unknown",
+      "distance": 0.1181,
+      "correct": false
+    },
+    {
+      "name": "1321.jpg",
+      "expected": "table_menu",
+      "predicted": "table_menu",
+      "distance": 0.0,
+      "correct": true
+    },
+    {
+      "name": "1329.jpg",
+      "expected": "player_stats",
+      "predicted": "player_stats",
+      "distance": 0.0,
+      "correct": true
+    },
+    {
+      "name": "1339.jpg",
+      "expected": "replay",
+      "predicted": "replay",
+      "distance": 0.0,
+      "correct": true
+    },
+    {
+      "name": "1333.jpg",
+      "expected": "disconnected",
+      "predicted": "disconnected",
+      "distance": 0.0,
+      "correct": true
+    },
+    {
+      "name": "1265.jpg",
+      "expected": "buyin_dialog",
+      "predicted": "buyin_dialog",
+      "distance": 0.0,
+      "correct": true
+    },
+    {
+      "name": "1261.jpg",
+      "expected": "cash_lobby",
+      "predicted": "cash_lobby",
+      "distance": 0.0,
+      "correct": true
+    }
+  ],
+  "caveat": "Color-based hints only; not a reliable vision model or source of action commands",
+  "method": "low-resolution RGB fingerprint / nearest labeled prototype; no OCR",
+  "limitations": "Some validation frames repeat prototype files (training leakage). Small convenience sample, not a blind test."
+}

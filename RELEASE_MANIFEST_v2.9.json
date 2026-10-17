@@ -1,0 +1,30 @@
+{
+  "version": "2.9.0-apk-gate",
+  "parent": "2.8.0-player-protocol",
+  "parent_archive": "AI-Remote-Control-GPT-v2.8-Autonomous-Player-Protocol.zip",
+  "parent_sha256": "a0d50423e722f69a87b026ec4db2abf4dd49d1e7a75ab71bdefe59959fc3e3be",
+  "modified_or_new_files": [
+    ".github/workflows/ci.yml",
+    "CHANGELOG_v2.9.md",
+    "QA_APK_BUILD_ATTEMPT_v2.9.log",
+    "QA_AUTH_v2.9.log",
+    "QA_HTTP_v2.9.log",
+    "QA_KOTLIN_v2.9.log",
+    "QA_PYTHON_SERVER_v2.9.log",
+    "QA_REPORT_v2.9.json",
+    "QA_STRATEGY_v2.9.log",
+    "QA_TOOLS_v2.9.log",
+    "README_v2.9_RU.md",
+    "android/app/build.gradle.kts",
+    "android/app/src/main/java/com/example/airemote/MainActivity.kt",
+    "tools/android_preflight.py",
+    "tools/apk_release_gate.py",
+    "tools/build_android_debug.sh",
+    "tools/test_android_preflight.py",
+    "tools/test_apk_release_gate.py",
+    "windows/01_BUILD_APK.ps1",
+    "windows/03_CONNECT_PHONE.ps1"
+  ],
+  "build_apk_status": "NOT_BUILT",
+  "compatibility": "No changes to arc_player, lab_auth, lab_strategy or server API; Android application version incremented and build gate added."
+}

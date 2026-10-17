@@ -1,0 +1,25 @@
+{
+  "version": "v1.2",
+  "base": "v1.1",
+  "state": "offline_read_only_release_candidate",
+  "android_apk_compiled": false,
+  "openai_live_api_verified": false,
+  "seat_level_wager_recognition_complete": false,
+  "all_card_ranks_supported": false,
+  "automatic_real_money_gameplay": false,
+  "interfaces": [
+    "/vision/cards",
+    "/vision/measure",
+    "/math/equity"
+  ],
+  "sha256": {
+    "server/arc_vision/money_reader.py": "d38bb2e0ef9ed1194202e3ec31071baabc796c581b3e6ad03edd03ef106991f3",
+    "server/arc_vision/money_glyphs.json": "1a8b17eec9e93c38a85bb7d06e73974610e227831a449a0fffd24ed7399ce169",
+    "server/arc_vision/combined_observer.py": "319dcb853fec101f614d37e1f20877ddd4ccba3b6d959c1ca5f88a8bd2138f33",
+    "server/server.py": "f83c0077721b967bb42bc4c3e47f69d2432359120b29438ad4a67c5ead3a96f7",
+    "server/requirements-vision.txt": "f5add40198535af6031a74c423a72f3a144645f0f6f1620f7ff070af3a1c241a",
+    "server/tests/test_money_v12.py": "acb7c1e45744b05842341e7149ae0f835d01f1a13df125197867b3601740cf2f",
+    "datasets/money_gold/annotations.json": "fd9ceacdbfff0d6084c22ddb4a114fae49c970c0756a3457c37d4cc2df308b4a",
+    "datasets/video_money_checks/gold.json": "a26d714eae078f73a620f24df8d2ca2f62479437e1e21e83d2a45dec2965c32f"
+  }
+}

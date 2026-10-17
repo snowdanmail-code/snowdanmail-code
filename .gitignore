@@ -1,0 +1,22 @@
+*.apk
+*.aab
+*.jks
+*.keystore
+.local.properties
+local.properties
+.gradle/
+build/
+.idea/
+__pycache__/
+*.pyc
+.env
+
+# v2.5 local authentication secrets
+*.vault
+*.token
+lab_auth/.private/
+
+# Private screen captures and game data remain local
+datasets/
+server/demo-registry/
+QA_*.log

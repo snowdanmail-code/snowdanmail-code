@@ -1,0 +1,41 @@
+{
+  "pass": true,
+  "steps": [
+    {
+      "enabled": true,
+      "checkpoint": "cp-demo-runtime-v0.8-0",
+      "release": "demo-runtime-v0.8-0",
+      "policy_version": "0.8.0",
+      "policy_name": "balanced-read-only",
+      "lab_only": true,
+      "money_actions_enabled": false,
+      "autonomous_betting_enabled": false
+    },
+    {
+      "enabled": true,
+      "checkpoint": "cp-demo-runtime-v0.8-1",
+      "release": "demo-runtime-v0.8-1",
+      "policy_version": "0.8.1",
+      "policy_name": "strict-read-only",
+      "lab_only": true,
+      "money_actions_enabled": false,
+      "autonomous_betting_enabled": false
+    },
+    {
+      "enabled": true,
+      "checkpoint": "cp-demo-runtime-v0.8-0",
+      "release": "demo-runtime-v0.8-0",
+      "policy_version": "0.8.0",
+      "policy_name": "balanced-read-only",
+      "lab_only": true,
+      "money_actions_enabled": false,
+      "autonomous_betting_enabled": false
+    }
+  ],
+  "audit": {
+    "ok": true,
+    "events": 30,
+    "tip": "d46049c8cc8c7cd579a827eaad35f9471a075b95522d38ebed7fa15e72bbbac3"
+  },
+  "scope": "read-only laboratory; not Android or real-money testing"
+}

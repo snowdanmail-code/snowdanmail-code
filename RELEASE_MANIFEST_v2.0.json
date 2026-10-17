@@ -1,0 +1,14 @@
+{
+  "release": "2.0.0-lab",
+  "artifact_type": "source archive, NOT APK",
+  "android_apk_built": false,
+  "sdk_available": false,
+  "python_server_tests": 310,
+  "preflight_tests": 3,
+  "kotlin_policy_test_files": 4,
+  "ci_build_executed": false,
+  "external_game_actions_enabled": false,
+  "previous_release": "1.9",
+  "sha256_files": 284,
+  "notes": "Static/laboratory verification; needs real Android SDK build and device testing."
+}

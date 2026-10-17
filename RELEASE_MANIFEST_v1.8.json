@@ -1,0 +1,16 @@
+{
+  "version": "v1.8.0",
+  "status": "laboratory_read_only",
+  "python_tests": 302,
+  "python_tests_passed": true,
+  "kotlin_trace_checks_passed": true,
+  "kotlin_existing_tests_passed": true,
+  "apk_built": false,
+  "openai_live_test": false,
+  "android_device_test": false,
+  "real_money_actions_enabled": false,
+  "simulation_e2e_p50_ms": 2714.0,
+  "simulation_e2e_p95_ms": 5115.0,
+  "source_base": "AI Remote Control GPT v1.7",
+  "file_count_checked": 264
+}

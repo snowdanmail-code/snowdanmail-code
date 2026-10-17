@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "errors": [],
+  "warnings": [
+    "No gradle-wrapper.jar; CI uses setup-gradle 8.9; for local use install Gradle 8.9"
+  ],
+  "android_sdk_available_here": false,
+  "is_apk_build": false
+}

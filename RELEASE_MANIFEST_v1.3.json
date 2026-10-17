@@ -1,0 +1,1065 @@
+{
+  "version": "1.3.0",
+  "files": {
+    "README_v1.1.md": {
+      "sha256": "780216d2302da22f5eb7aef60b5145b0b37b5743aa094fa527188bafe3d0e024",
+      "size": 5394
+    },
+    ".gitignore": {
+      "sha256": "99e97afbdcb88a9e0d9ec6b4f9a8a57081f43e19845e7c541c26ffe3bdcbc833",
+      "size": 111
+    },
+    "QA_REPORT_v1.3.log": {
+      "sha256": "a2abb282b7763d8ac6b6074aeba78c130130fbba17b75cb636ab955bee6537ba",
+      "size": 3986
+    },
+    "PROJECT.md": {
+      "sha256": "b6ddc0352109f6a4eb7445f2fb82e8f29c1bbcdeff94cb57620f1b512454c947",
+      "size": 8219
+    },
+    "BENCHMARK_v1.1.json": {
+      "sha256": "10da3b498ec67607d3bb79357ac68c76055d9d2282b22c44897d2442d41fa28a",
+      "size": 7010
+    },
+    "RELEASE_MANIFEST_v1.1.json": {
+      "sha256": "e0d229f1ab3cb21255f310375c491696ea7a07f9baea747bc1a0240b690d7432",
+      "size": 1249
+    },
+    "CHANGELOG_v1.3.md": {
+      "sha256": "d2506dbc6d6b4544a9a3af3168d7bccf10907242f5757ed56c8547f4bba2879d",
+      "size": 554
+    },
+    "PROFILE_RESOLUTION_v1.3.json": {
+      "sha256": "db9cc51141b2954fe6040a757a347435e959e17c1f8ec7b7de3e404393a6dfb6",
+      "size": 682
+    },
+    "README_v0.9.md": {
+      "sha256": "97e21fff73b7605e703aca04bf6f2bc4552e12c2381d2cceeb18f871b3450202",
+      "size": 2322
+    },
+    "VERIFICATION.json": {
+      "sha256": "ac4b197a30d48caf6acde81cc0a2a9dddbe0d53f865bcf0f1059e6d2611ea047",
+      "size": 992
+    },
+    "VERIFICATION_v1.0.json": {
+      "sha256": "ca94e7c62e26d22c661002e654bd3b29e8e1391030d2216d4201765bce148979",
+      "size": 924
+    },
+    "README_v1.0.md": {
+      "sha256": "a2648c0cd568864238e7a1f36a5794bae2ea49d9b31c53caf206d69a91e343b7",
+      "size": 4128
+    },
+    "POST_SESSION_REVIEW.md": {
+      "sha256": "6fd65ad8b1dfe63a99035a85351b30ae04a832ce1153750f8fc2710d79791946",
+      "size": 4790
+    },
+    "README_v1.3.md": {
+      "sha256": "de6c55787854304b2f08b163688853b6f876055a51489b42b8c2439df3138f8a",
+      "size": 9190
+    },
+    "RELEASE_MANIFEST_v1.2.json": {
+      "sha256": "b2f1e4910d7a5a63ad740970ad1e96cd3f89f9b14929df21dddc1ded2ed18e06",
+      "size": 1257
+    },
+    "README_v0.7.md": {
+      "sha256": "61ee3a9b12ea415d764d3ed4e3698035a49042e67d56ea2a1fa4387e6910fc13",
+      "size": 1169
+    },
+    "README_v1.2.md": {
+      "sha256": "e983e7b760387433fb0fcefcd4391aa567f8550788056358a9e46ed859e512cb",
+      "size": 4359
+    },
+    "BENCHMARK_v1.3.json": {
+      "sha256": "b479850ada350f5038b1a0f95bba35cce7ec02ad1c3a9112e8b6c61758628f03",
+      "size": 1566
+    },
+    "README_v0.8.md": {
+      "sha256": "59ea5e6fb50802f9dd22fceb0ce846665dd2c19175a2d822f8acd32b84cb1ebd",
+      "size": 8337
+    },
+    "README.md": {
+      "sha256": "fa790614c28848f76f27beaea98f5028334e15f3173094c0753f9156fc581422",
+      "size": 14834
+    },
+    "examples/offline_completed_hands.json": {
+      "sha256": "156a83b7faa198beec1a37783138074115d49a0c6041a99b5372fc2c17be542d",
+      "size": 3440
+    },
+    "server/navigation_fsm.py": {
+      "sha256": "e044efe5efba43aee59571d4b55d75715734e22f68906772328920fba13eae9f",
+      "size": 1950
+    },
+    "server/VERIFICATION_v0.8.json": {
+      "sha256": "a1defa03287d7abe9c40ab78b4fc971d3355ef82759edb2d72a4a70bd882e67d",
+      "size": 572
+    },
+    "server/lab-report.json": {
+      "sha256": "166c9ab4400986bdecc5e89b253a0b29ab420344a22e911c9c9ff632edbf5645",
+      "size": 565
+    },
+    "server/poker_session.py": {
+      "sha256": "6f36b88a3060f1f5f6f9eef25062d5b54a67080cec8281d3321df1255a010d67",
+      "size": 1667
+    },
+    "server/agent.py": {
+      "sha256": "33a72c7e93bcdd2afe347efdcf9446fcce91c961e61febef11dc9b6ffe01c801",
+      "size": 4143
+    },
+    "server/screenshots_manifest.json": {
+      "sha256": "d92aa9dbb106af9aabc5c3854fa7e9d023a94d5805274e754265109e3d3eaf3d",
+      "size": 2352
+    },
+    "server/server.py": {
+      "sha256": "c999efda578914e1e7b052eab7ec4af4f6528cbfa1e489a0a36ed7903659a146",
+      "size": 24754
+    },
+    "server/QA_REPORT_v1.2.log": {
+      "sha256": "acd336850efee5089ea7417fc8c2b80b95d756f00770d8463e2bae391a605227",
+      "size": 3699
+    },
+    "server/runtime_lab_report.json": {
+      "sha256": "dc9d2a9e2ec7b471acfbc61ffebf6463436f2de9e2a00d1a76c7aa5a5bce967f",
+      "size": 1139
+    },
+    "server/post_session_reviewer.py": {
+      "sha256": "5f400ad5312191bc972bb87df71b348438d75cd62e2a47593f32e847ba939ad7",
+      "size": 9004
+    },
+    "server/requirements-vision.txt": {
+      "sha256": "f5add40198535af6031a74c423a72f3a144645f0f6f1620f7ff070af3a1c241a",
+      "size": 133
+    },
+    "server/lobby_agent.py": {
+      "sha256": "3be60ffa29298930f3771864815ea8db7d2218043f90a9bee51f6286654ec254",
+      "size": 11651
+    },
+    "server/full-test-output-v0.8.txt": {
+      "sha256": "7fd7ca0590fbdc0787bd134e258c6d0477e25970b890afa9e63025dd330b26c8",
+      "size": 22171
+    },
+    "server/poker_agent.py": {
+      "sha256": "ef82a3cde4a73a542c23e89d3514c44d404a0c8bca10c01ec957675ab400dfcf",
+      "size": 5127
+    },
+    "server/stream_agent.py": {
+      "sha256": "5d475c5c517a779e436e39964a891c31a3175c3551a3bb1fb7d4e3fd4e8006e3",
+      "size": 5892
+    },
+    "android/gradle.properties": {
+      "sha256": "fa078c27c9e4bde28a029d673875b028884505efa436b68cf60e1ac0be5b679b",
+      "size": 103
+    },
+    "android/settings.gradle.kts": {
+      "sha256": "767fbe8de6b64ab1bdc0da74fa2079e0031d314c0fda9b7340e876058b1ba797",
+      "size": 290
+    },
+    "android/build.gradle.kts": {
+      "sha256": "50425357e4449207a6e3098fa4f4dc66864a870859025051fc809589ddb858df",
+      "size": 142
+    },
+    "docs/RELEASE_v1.0.md": {
+      "sha256": "a89f41b13fd44db43d708ca972e2ba6ee28c5a1e52b484f0036d88cc4e42bcb7",
+      "size": 1705
+    },
+    "docs/CHANGELOG.md": {
+      "sha256": "f77e3aa58e6d003caaacb20618638bca3ec570666c0a3c10dfa7f87945d9b3a0",
+      "size": 2717
+    },
+    "docs/VIDEO_REVIEW_v0.9.md": {
+      "sha256": "c3233fc6fd19eeaacef47ced6a88eae69f73f325d12818017588fe75fc9ee1bd",
+      "size": 1920
+    },
+    "docs/frame_benchmark.json": {
+      "sha256": "43743611d2fb8107f7ed8dbe5a4e60145e0ced3de87724cca829edcd132ba82e",
+      "size": 3238
+    },
+    "docs/RELEASE_v1.1.md": {
+      "sha256": "e566dcd3071b5a726b8ab0729203b06879183ae74efbdda36922a1c31c72634a",
+      "size": 979
+    },
+    "docs/README_VERSIONING.md": {
+      "sha256": "508e7a2496e27e3f13b9a68bc35febc2a7c01082f33acb63fc0229673318df04",
+      "size": 3728
+    },
+    "android/tests_fast/FastCapturePolicyTest.kt": {
+      "sha256": "dba8ae2b41a216b01fb04105bd2a052b248584b0bb26f748d038d7228cbca6fd",
+      "size": 579
+    },
+    "android/app/build.gradle.kts": {
+      "sha256": "a5968c15af91e3c5033895e06c05b5902827bf0c31d1c0d2cf9399f90e37ee7a",
+      "size": 627
+    },
+    "android/gradle/wrapper/gradle-wrapper.properties": {
+      "sha256": "3d91f0932da99885c41e9dc4e85c9f9a2d3bfef4f0ad87473014dc0827a94884",
+      "size": 250
+    },
+    "android/app/src/debug/AndroidManifest.xml": {
+      "sha256": "f9efcf0c5237f7a95cbbfd80400dfddf1fd4a7cc8ce505e18adad3df8691db5b",
+      "size": 273
+    },
+    "android/app/src/main/AndroidManifest.xml": {
+      "sha256": "dfff4d2d552ab25357d34bed01961b3af1f10555378af672feab3d201a54245b",
+      "size": 1564
+    },
+    "android/app/src/main/res/xml/demo_accessibility_service.xml": {
+      "sha256": "6216754e12b1326470c0a96116701d7c3145c5fc78db7b0689d9eed32692242d",
+      "size": 497
+    },
+    "android/app/src/main/res/values/strings.xml": {
+      "sha256": "b40e78bac9158eb2a503743d83e1d8d2e46714519640bc231bbd0032696ce6d9",
+      "size": 297
+    },
+    "android/app/src/main/res/values/ids.xml": {
+      "sha256": "74f23021f582b2dd683d335941a4819ddcabd1d1fa55aa88be767f81dd29035a",
+      "size": 60
+    },
+    "android/app/src/main/java/com/example/airemote/CaptureService.kt": {
+      "sha256": "2b7eb8033c41adb6fe9e19bdd0698270e274d098924203bf340fd22d640e6aa5",
+      "size": 23967
+    },
+    "android/app/src/main/java/com/example/airemote/MainActivity.kt": {
+      "sha256": "c1764263713e3490d56901f259136c743a4c3f26bd3800bc1b5d31b4f49758e3",
+      "size": 29535
+    },
+    "android/app/src/main/java/com/example/airemote/FrameDifference.kt": {
+      "sha256": "1da7b51715433b1b5c18dfc643773a839b4d36fcc2c5edf85853624a9940ac1d",
+      "size": 1054
+    },
+    "android/app/src/main/java/com/example/airemote/DemoAccessibilityService.kt": {
+      "sha256": "35da453ab84c790a1718fc68f31a210302b9098c156fe3c94e9e6c7866a41167",
+      "size": 5316
+    },
+    "android/app/src/main/java/com/example/airemote/FrameStore.kt": {
+      "sha256": "ab4eacd8bfa2637c0c7ab0225c624e1e33d6f93ac39537a5912bd29b4dd50ec8",
+      "size": 1304
+    },
+    "android/app/src/main/java/com/example/airemote/FastCapturePolicy.kt": {
+      "sha256": "f4a56600e1266b419e4cad6ba91334c77030c8435ed670e2418a9613cf36965d",
+      "size": 881
+    },
+    "server/arc_poker_math/__init__.py": {
+      "sha256": "3392e9408244c3f1fdf1978a9315d575a0a6ca76457a01093feccf528bf45651",
+      "size": 443
+    },
+    "server/arc_poker_math/holdem.py": {
+      "sha256": "669e1673bd6f1497d8966be49ed98e5b18d5efa8eb59ca00e702bf13d5982dc4",
+      "size": 6351
+    },
+    "server/demo-registry/active.json": {
+      "sha256": "88a6fc4a0fc4a7ed0a133e8e45179d4a709ada703f3ba35debf2f3a88dd32784",
+      "size": 203
+    },
+    "server/demo-registry/audit.jsonl": {
+      "sha256": "969184e076ccccc8304479622ac39c129268531447cca2d082a34a021c3bd329",
+      "size": 9446
+    },
+    "server/demo-registry/artifacts.json": {
+      "sha256": "b890856d4e7e7440a0f2995684b5dbafd809339506b1d4e80af09b24d1f8f6ad",
+      "size": 3180
+    },
+    "server/arc_runtime/visual_hints.json": {
+      "sha256": "7a546e14cdef594f89302635094d1b5968e7cbda2e84fd50d22ef436631ea51f",
+      "size": 37383
+    },
+    "server/arc_runtime/release.py": {
+      "sha256": "b3af85196c3734702d01207bc7b7a228be8f1dae3232d8893469ef0ed1edd500",
+      "size": 4910
+    },
+    "server/arc_runtime/__init__.py": {
+      "sha256": "dfcde681abbdb9acf819062820910ad892e08dc73338d3a1b38726b30ce67fa4",
+      "size": 81
+    },
+    "server/arc_runtime/seed.py": {
+      "sha256": "2213331871131a8b393f0a689bc0d33a8c5dc05da3881993ed208d3d2110925a",
+      "size": 1560
+    },
+    "server/arc_runtime/frame_hints.py": {
+      "sha256": "c13a6dab45ed453e1f781737d00f0ea5453485993db77de540fc4043e848b8f2",
+      "size": 2724
+    },
+    "server/arc_runtime/offline_benchmark.py": {
+      "sha256": "3a3394289eacf7e1dd7695eb7b633c8d9db6153845021b30d501e60d22fc1b9f",
+      "size": 2580
+    },
+    "server/arc_runtime/service.py": {
+      "sha256": "02b394b3b8c3730b748f1b72ba1f1d71406800cbb60e56001ff35723dc0a0aa8",
+      "size": 1418
+    },
+    "server/arc_runtime/observe.py": {
+      "sha256": "21985cd3480d23bcf58a218f5a107b33969954e7e7483fe6b22bb2804fc7b4fe",
+      "size": 6217
+    },
+    "server/arc_runtime/adapter.py": {
+      "sha256": "c1031676e442dee9d6ff98a10a37d806676e01dd1703d0f24898d0f01290cba6",
+      "size": 1265
+    },
+    "server/arc_fastloop/__init__.py": {
+      "sha256": "81ad09f16cb8f127853d2b3fded652bd5cb74fb9ee4def5376a95aa7bc499113",
+      "size": 124
+    },
+    "server/arc_fastloop/benchmark.py": {
+      "sha256": "fc3286eb1e45bbb47c37fab9516ea750238e2d73a204b10487f246d90621da2d",
+      "size": 2705
+    },
+    "server/arc_fastloop/observe.py": {
+      "sha256": "e4d7853b840411012fc92832dca4adaf82b2f6feb920aeca0ebc32394fd8c4e2",
+      "size": 1675
+    },
+    "server/arc_fastloop/gate.py": {
+      "sha256": "f00bbab04c7f5599c8f2ea039369d6a9134c582a9954fc8ba0c8c96c211e2d81",
+      "size": 5293
+    },
+    "server/tests/test_visual_hints.py": {
+      "sha256": "d4369ec45cbb86feb25adfd4893ca79cb5b05a64def41c66641c6473f61d9a01",
+      "size": 1285
+    },
+    "server/tests/test_money_v12.py": {
+      "sha256": "acb7c1e45744b05842341e7149ae0f835d01f1a13df125197867b3601740cf2f",
+      "size": 7630
+    },
+    "server/tests/test_card_reader_v11.py": {
+      "sha256": "170013a48ddb003dcf5d44a730da6eabf4f9076948c9230c0eea5e8eb650df26",
+      "size": 4418
+    },
+    "server/tests/test_stream.py": {
+      "sha256": "54e7356d2770de1026ebc9344efef3c627ac9dd1a2d98b43f9f96e8a939a10e7",
+      "size": 5995
+    },
+    "server/tests/test_agent.py": {
+      "sha256": "c9eb77753b922aaadf2c59c7411ae05b6cb3236117111c7a6b04feca19679273",
+      "size": 8577
+    },
+    "server/tests/test_runtime_http.py": {
+      "sha256": "26ee539381f628e88f8e5dbfadbfa6122df0055c92d438392dc1e4806aaa05f4",
+      "size": 5164
+    },
+    "server/tests/test_poker_math.py": {
+      "sha256": "d2abf6ab43f0d3d12f96454f9e0de58ec64fc6ba2e48acd83ba16b3eb516af4c",
+      "size": 6840
+    },
+    "server/tests/test_lobby_agent.py": {
+      "sha256": "eea790fad2fe46965a9f93ab68c90be58a16b587a61a1e28f3c95ef288d67b32",
+      "size": 8657
+    },
+    "server/tests/test_server.py": {
+      "sha256": "a2299da3019d29766da64d0c879dd14f5ea1a8d4ed426d37955e974dab36f8dd",
+      "size": 7084
+    },
+    "server/tests/test_runtime_concurrency.py": {
+      "sha256": "0310531c3f7d3ebf8c44404e985d558be74fbaab574172c5196290c6314aad24",
+      "size": 1202
+    },
+    "server/tests/test_versions.py": {
+      "sha256": "319d07e2befb8eaefe00b40e3f9987db3697530ca5a0a02985806eb918a340cb",
+      "size": 7658
+    },
+    "server/tests/test_fastloop_v13.py": {
+      "sha256": "60c6e001aca89b60146c75ca5b24c5b5dc1e68a7e7b75aed0c7e4c07a8df0775",
+      "size": 5763
+    },
+    "server/tests/test_timeline.py": {
+      "sha256": "b6a32bc7cd686f9d984f89fd44a4bc8f1d465a416c9180a59f4b2ef91219c252",
+      "size": 3270
+    },
+    "server/tests/test_profiles_v13.py": {
+      "sha256": "ce100aa29500ae0f51db240f5de5232e91c4f8358fa995ebd2bff14393cedc38",
+      "size": 1677
+    },
+    "server/tests/test_video_dataset.py": {
+      "sha256": "1a284dfa64ec1aa0f012b8bb5c8d2f9e00f78bfbdeaa1b484a7fdfdb86db9fe2",
+      "size": 2127
+    },
+    "server/tests/test_post_session_reviewer.py": {
+      "sha256": "1e8f42a8ec2d0da885383a017283d7d3882da53e395333440fe7e10e184452d1",
+      "size": 4865
+    },
+    "server/tests/test_runtime.py": {
+      "sha256": "c788e1aa9b3a998700b72b82b68788e1896d76515858b648284ba9f7a7217626",
+      "size": 9794
+    },
+    "server/tests/test_poker.py": {
+      "sha256": "db5645d9419ab213c51e3c606f177b19119535d11b4be4c5f758373dda6692ca",
+      "size": 3989
+    },
+    "server/arc_versions/contracts.py": {
+      "sha256": "3750f7bb1bb8979a28c603c8729e1f8a00b465b8c05ae2c1bc0807b5a801f20f",
+      "size": 1205
+    },
+    "server/arc_versions/__init__.py": {
+      "sha256": "ce45be0eb98c5bf2087bb8464cc36564fcb8c2285a79241136dfc81d126bb484",
+      "size": 175
+    },
+    "server/arc_versions/registry.py": {
+      "sha256": "b848d36a8a86ecd250c665118c127e351c584ce1a38b3fb6d440a09aea2442e1",
+      "size": 16439
+    },
+    "server/arc_versions/sandbox.py": {
+      "sha256": "f76cfc6186b529a83dae761b795e0b7c14b3bb712fc3e11ba770622e916a7528",
+      "size": 1237
+    },
+    "server/arc_versions/cli.py": {
+      "sha256": "013697a1d297785c11cad9ff288f77a6a5cdba76e1fc1a3440b749a4637b3716",
+      "size": 3283
+    },
+    "server/arc_versions/seed_lab.py": {
+      "sha256": "afe7685296ae9d6b123e43b3494e4ca4ffbccc128b460e98f2821b5d986097e6",
+      "size": 4582
+    },
+    "server/__pycache__/stream_agent.cpython-313.pyc": {
+      "sha256": "bdd5aa18d14c05768bb34d0c62c49e274dc5bb3c53580852233527cc3c5c69ac",
+      "size": 8321
+    },
+    "server/__pycache__/server.cpython-313.pyc": {
+      "sha256": "11997b474ec360b8aa9f2f6a62be9d03d3acbe6763c1c6a025812ed58f52c315",
+      "size": 29196
+    },
+    "server/__pycache__/post_session_reviewer.cpython-313.pyc": {
+      "sha256": "7ab4794dc58bdc9e6ff9914815eb3a9b77ec3dca22eddb8dbc195e4da84f624f",
+      "size": 13127
+    },
+    "server/__pycache__/agent.cpython-313.pyc": {
+      "sha256": "5a328ce424698655bcee3480a30eff1c5fbeb33f9486a766a7740c51f07fcd3b",
+      "size": 5193
+    },
+    "server/__pycache__/navigation_fsm.cpython-313.pyc": {
+      "sha256": "62d1bf6d07c3f71f2c85c1321c8c724ef4229b2a278aaca7660eee63ce5e0afd",
+      "size": 2288
+    },
+    "server/__pycache__/poker_session.cpython-313.pyc": {
+      "sha256": "bf06227a257196fb147b8edec74ba10f0441b69b553b50a7e222b13625cf5ce7",
+      "size": 2675
+    },
+    "server/__pycache__/poker_agent.cpython-313.pyc": {
+      "sha256": "92bb7144a1905ce2aa83faa54d8dcd9f4bb2e748b45d4beb3a2f96e8864064c0",
+      "size": 6315
+    },
+    "server/__pycache__/lobby_agent.cpython-313.pyc": {
+      "sha256": "239b269874a17f109681f963a7383bef6b5860d528064451633c157fc8ba5f55",
+      "size": 13703
+    },
+    "server/arc_vision/dataset.py": {
+      "sha256": "1d184b10dd21069cf2d9f2633e0694444525f971ba40f68546c2359fb7b8a0c1",
+      "size": 1438
+    },
+    "server/arc_vision/ui_policy.py": {
+      "sha256": "6d6a072d93cd2218df44a88d66b910183f4a47e0a7ef1188bc054b1cc8e1c627",
+      "size": 1598
+    },
+    "server/arc_vision/money_reader.py": {
+      "sha256": "4ede54e8598e37fd81651fa88d3229d83ac62cde1e3c3642606bf31d94bf2f07",
+      "size": 7046
+    },
+    "server/arc_vision/card_reader.py": {
+      "sha256": "ea050380e346b1bbe27e29f263e733fac5e7c610402ccd5e67172b86880e1953",
+      "size": 8291
+    },
+    "server/arc_vision/__init__.py": {
+      "sha256": "6394ffbb4206cfb867b98b91b1db004a336f7c4799727139b7015681cf889df7",
+      "size": 87
+    },
+    "server/arc_vision/consistency.py": {
+      "sha256": "44902aed519b5522c0edf1f9e55de8c6debebc51ab35bf64cc0d5311bca1b6b1",
+      "size": 2378
+    },
+    "server/arc_vision/money_glyphs.json": {
+      "sha256": "1a8b17eec9e93c38a85bb7d06e73974610e227831a449a0fffd24ed7399ce169",
+      "size": 8815
+    },
+    "server/arc_vision/make_private_fixtures.py": {
+      "sha256": "1f2d52911c2c3eb4fb5f41c018be56f45b2dfae8332bd43e6f768bd14b756394",
+      "size": 2285
+    },
+    "server/arc_vision/glyph_atlas.json": {
+      "sha256": "b325c776c12cdae3b1bc62ad55e5b16a8e91640c9b16c04afa9dd65049ef47e6",
+      "size": 131258
+    },
+    "server/arc_vision/combined_observer.py": {
+      "sha256": "2a93075b8a4b8fd8d56b1e6fac0e90551fe3be780513b06f4195316d8ccabf15",
+      "size": 2529
+    },
+    "server/arc_vision/benchmark_cards.py": {
+      "sha256": "3729a66da176aa76cf3ca7ca6524c1ed8faefab48d37ad48fca07b2c7325a70f",
+      "size": 2887
+    },
+    "server/arc_vision/timeline.py": {
+      "sha256": "d88c958f46717878bd6c56a6e14317ceb6a1edc5206ea2bad6f50bf4476f4b75",
+      "size": 4625
+    },
+    "server/arc_vision/__pycache__/ui_policy.cpython-313.pyc": {
+      "sha256": "936b5f9e85e8d69484f47aa2c43247cedc069256ad54459e5f0b1dea88ff77d1",
+      "size": 1802
+    },
+    "server/arc_vision/__pycache__/card_reader.cpython-313.pyc": {
+      "sha256": "11a327362e62aeb8941b4e4f9800f537f8983ad2b2e7384afef45c97a04ce008",
+      "size": 12067
+    },
+    "server/arc_vision/__pycache__/dataset.cpython-313.pyc": {
+      "sha256": "52bc96a97788a0bc5e3d469370aa47c4212560e33cc25b1c5620fcebe55c6348",
+      "size": 2453
+    },
+    "server/arc_vision/__pycache__/timeline.cpython-313.pyc": {
+      "sha256": "b22cfa985424db673e4ce1ab48492091e9e2d2bb146f2af717d901f7ac251985",
+      "size": 6054
+    },
+    "server/arc_vision/__pycache__/combined_observer.cpython-313.pyc": {
+      "sha256": "aeacbec7d8da41bec475aaeb59bb80e682057a8d010cd852116b2acb0f7c360e",
+      "size": 3536
+    },
+    "server/arc_vision/__pycache__/money_reader.cpython-313.pyc": {
+      "sha256": "ba0928a1d8e59777659450819e5f208a23533dafe911ee10fd79c0d56ec5ef8f",
+      "size": 11948
+    },
+    "server/arc_vision/__pycache__/__init__.cpython-313.pyc": {
+      "sha256": "d90ef026995bdbdf0ec15ad6e4428264786b4c0a81c0569bd19ef698d20fed46",
+      "size": 262
+    },
+    "server/arc_vision/__pycache__/consistency.cpython-313.pyc": {
+      "sha256": "0297f70eb7d9290966a9150e87b38128bb7d11207cb6438f49449a09c9defc4f",
+      "size": 3363
+    },
+    "server/arc_versions/__pycache__/registry.cpython-313.pyc": {
+      "sha256": "ccbc68da55d8653e1c30e8a669e37ba1ab79ea9c4b0988d9f0dfb21d0e2ebc24",
+      "size": 26002
+    },
+    "server/arc_versions/__pycache__/contracts.cpython-313.pyc": {
+      "sha256": "ad9531e94a2a6ac71722da69519965e74877cbc2bd39a603a8908db3989940ba",
+      "size": 3191
+    },
+    "server/arc_versions/__pycache__/sandbox.cpython-313.pyc": {
+      "sha256": "662c478718b358f58dbca7100224640c8cd8ab6c88474e8d9936d4e3c8eb511f",
+      "size": 2772
+    },
+    "server/arc_versions/__pycache__/__init__.cpython-313.pyc": {
+      "sha256": "41d9ff4ec38efc89338bb81f85491b2be9e8f27691e8a9a4ea9bd16d4cb89607",
+      "size": 407
+    },
+    "server/tests/__pycache__/test_card_reader_v11.cpython-313.pyc": {
+      "sha256": "5d99647deb54cb4fa0e85d3446d5a722945aeb24a84f84612688e99053328c53",
+      "size": 9163
+    },
+    "server/tests/__pycache__/test_post_session_reviewer.cpython-313.pyc": {
+      "sha256": "e0392c453601fcaad1a446c583b7458304cb075c03e57c52e560f428fb1eecac",
+      "size": 10778
+    },
+    "server/tests/__pycache__/test_video_dataset.cpython-313.pyc": {
+      "sha256": "9e2bde4ba18cfb2aff7bf5caeffdeb5620685d25ad429b73c2846ab91abc4ae9",
+      "size": 4357
+    },
+    "server/tests/__pycache__/test_stream.cpython-313.pyc": {
+      "sha256": "d9a25eeb3fa08aea4c879102a57d172d70fb493a6636c5d9b38ddb519dd7ad9b",
+      "size": 13753
+    },
+    "server/tests/__pycache__/test_money_v12.cpython-313.pyc": {
+      "sha256": "466dc566b12843caad2d3d04f259b228c5f3abb023eabe2fb3f52d835801bbda",
+      "size": 16529
+    },
+    "server/tests/__pycache__/test_versions.cpython-313.pyc": {
+      "sha256": "c9be95874d21db0b45931dec1356c3831d8be4e1b0b401501b51d5a781f69bf1",
+      "size": 17030
+    },
+    "server/tests/__pycache__/test_visual_hints.cpython-313.pyc": {
+      "sha256": "e10bf8e57f212926d226891fffc2a8a24f11ae7086cb9fa995d3b76f15a4046e",
+      "size": 3249
+    },
+    "server/tests/__pycache__/test_poker_math.cpython-313.pyc": {
+      "sha256": "3c544925faca02d45ee7059d4d055e21a6e09dcad09c951a6560ee947df62727",
+      "size": 12910
+    },
+    "server/tests/__pycache__/test_agent.cpython-313.pyc": {
+      "sha256": "69c0c43244d6ea90511f588741568628ed476c25c029ba9a79fb00eeb3564fec",
+      "size": 19440
+    },
+    "server/tests/__pycache__/test_profiles_v13.cpython-313.pyc": {
+      "sha256": "51e3c35e38dbd6eb2961dd120541fcdb98bc397dfcc457414cc7bdcd9dc071a0",
+      "size": 4308
+    },
+    "server/tests/__pycache__/test_poker.cpython-313.pyc": {
+      "sha256": "a58d851626763cb720a7cd03a3dbe61595620e247c3e9de5bc1df60425fa3fb4",
+      "size": 9515
+    },
+    "server/tests/__pycache__/test_server.cpython-313.pyc": {
+      "sha256": "bbb1e0df043b70ab97304031b3ec0f35db32d4fee6b0952b0969ce439591264a",
+      "size": 12993
+    },
+    "server/tests/__pycache__/test_lobby_agent.cpython-313.pyc": {
+      "sha256": "60b172bc4647abc963db6958d3d67cd592651d0ce3bf594dfb6a98eea1bfc4d2",
+      "size": 18177
+    },
+    "server/tests/__pycache__/test_runtime.cpython-313.pyc": {
+      "sha256": "a5877147e75ffe80c1f740de42d6d9cd164dd5e5c0ca6c88ddb78a6d444ad788",
+      "size": 20794
+    },
+    "server/tests/__pycache__/test_runtime_concurrency.cpython-313.pyc": {
+      "sha256": "46cc3615c579a6a5e0f731ae9c7e8173be10749a9573b2df81671580ee6ade50",
+      "size": 3320
+    },
+    "server/tests/__pycache__/test_timeline.cpython-313.pyc": {
+      "sha256": "daab26921fa4a5266016b4a37da17d8d4998a2a0151cce770604eed362afe7eb",
+      "size": 6283
+    },
+    "server/tests/__pycache__/test_fastloop_v13.cpython-313.pyc": {
+      "sha256": "c98205d9619724d216d67521312da370838a8cb39f3a2953c6da6419e58a2e67",
+      "size": 12866
+    },
+    "server/tests/__pycache__/test_runtime_http.cpython-313.pyc": {
+      "sha256": "d75b7850987c677a7e547199634764a5a69627f9ba85db2a1163ac0b1f1373b5",
+      "size": 10169
+    },
+    "server/arc_fastloop/__pycache__/gate.cpython-313.pyc": {
+      "sha256": "d1720755cdd8a4159daa06a69b606202930a98b34f1c5bd6e9a182edda8cd95c",
+      "size": 9363
+    },
+    "server/arc_fastloop/__pycache__/observe.cpython-313.pyc": {
+      "sha256": "38dd99c7be3698bd45d9e2abc4631c12db3ec7b8e2874ff6da5e4bc71d55c671",
+      "size": 2447
+    },
+    "server/arc_fastloop/__pycache__/__init__.cpython-313.pyc": {
+      "sha256": "e664a55035048018cce23e4eefea6f646c2873c05495b044f96eddb8b03a8f7e",
+      "size": 338
+    },
+    "server/arc_fastloop/__pycache__/benchmark.cpython-313.pyc": {
+      "sha256": "0e83baccfc8899ef838eae06010d805f0cf43239e60646a982ec3d10fa117148",
+      "size": 4650
+    },
+    "server/arc_runtime/__pycache__/frame_hints.cpython-313.pyc": {
+      "sha256": "acf235f27154b3f2618643f4fd98e45392d9555e38b9a7cb967b253a88c4912f",
+      "size": 5195
+    },
+    "server/arc_runtime/__pycache__/observe.cpython-313.pyc": {
+      "sha256": "11178362ea46c755a19249088f195223f1797e80e8cc82914571668d41437889",
+      "size": 7919
+    },
+    "server/arc_runtime/__pycache__/adapter.cpython-313.pyc": {
+      "sha256": "5eb1194cf85814a9bc1cd9f86446bbec8798d4c10489a8a26ecdbcb4bb893e1d",
+      "size": 1354
+    },
+    "server/arc_runtime/__pycache__/service.cpython-313.pyc": {
+      "sha256": "5e410fc1c9788d692cf58e3376e5b24de0d66ced2af80a7f72c0166bf183e7cb",
+      "size": 2826
+    },
+    "server/arc_runtime/__pycache__/release.cpython-313.pyc": {
+      "sha256": "3ce8017b1228c3e47e367be6828126333c70c90aa159990490f4a8e546f80a94",
+      "size": 7103
+    },
+    "server/arc_runtime/__pycache__/__init__.cpython-313.pyc": {
+      "sha256": "abfdcb011eb1f19b6ab807197d28910c96f878564bf5f8e353b0557b38fafd90",
+      "size": 257
+    },
+    "server/demo-registry/blobs/477a34781ceb9bfe94555b16e6e1516e1c2a2997e320010f77b8007d712f4089": {
+      "sha256": "477a34781ceb9bfe94555b16e6e1516e1c2a2997e320010f77b8007d712f4089",
+      "size": 180
+    },
+    "server/demo-registry/blobs/22d2e1479e75153287cad256ee23795f79264c276e45fc0fa0b27ce344240573": {
+      "sha256": "22d2e1479e75153287cad256ee23795f79264c276e45fc0fa0b27ce344240573",
+      "size": 3894
+    },
+    "server/demo-registry/blobs/3b1e47f6179d8a812770674c38b7a0a925a3acb0583e010baf24cdd382374137": {
+      "sha256": "3b1e47f6179d8a812770674c38b7a0a925a3acb0583e010baf24cdd382374137",
+      "size": 706
+    },
+    "server/demo-registry/blobs/eea7fe93bcdbe0303507246a0605f6cb90051824c864c91b36e57ee730a01ebe": {
+      "sha256": "eea7fe93bcdbe0303507246a0605f6cb90051824c864c91b36e57ee730a01ebe",
+      "size": 258
+    },
+    "server/demo-registry/blobs/c386cabed678e9a19333d4486e71f035f79d3469e792d64e7eeb8472c220613b": {
+      "sha256": "c386cabed678e9a19333d4486e71f035f79d3469e792d64e7eeb8472c220613b",
+      "size": 3172
+    },
+    "server/demo-registry/blobs/d8baf3a351b278128d2c3a96a0215365c4d04f05636d0ff540635da3ba279829": {
+      "sha256": "d8baf3a351b278128d2c3a96a0215365c4d04f05636d0ff540635da3ba279829",
+      "size": 179
+    },
+    "server/demo-registry/blobs/cd5bce394f1cf5c8cd925daa47e035342fec8e3b36b6956cd165a8e728df814c": {
+      "sha256": "cd5bce394f1cf5c8cd925daa47e035342fec8e3b36b6956cd165a8e728df814c",
+      "size": 158
+    },
+    "server/demo-registry/blobs/70e2986679a4964e2625f45c2ff4e4f75f664e4271f6e0b04bb2c69df7b68383": {
+      "sha256": "70e2986679a4964e2625f45c2ff4e4f75f664e4271f6e0b04bb2c69df7b68383",
+      "size": 1954
+    },
+    "server/demo-registry/blobs/e9e7076e196bd62a6f58b614424cbb8b440e45966b8d115bb0ce91263d90f874": {
+      "sha256": "e9e7076e196bd62a6f58b614424cbb8b440e45966b8d115bb0ce91263d90f874",
+      "size": 158
+    },
+    "server/demo-registry/blobs/5589f568b8033a20117fd15b9a81f018595a2bb015f82f0aab2c3fcc0a5689b5": {
+      "sha256": "5589f568b8033a20117fd15b9a81f018595a2bb015f82f0aab2c3fcc0a5689b5",
+      "size": 256
+    },
+    "server/demo-registry/blobs/e2d12016a590131884ce5375cad1f0656a5531b71131866412b8c01c4f2a5393": {
+      "sha256": "e2d12016a590131884ce5375cad1f0656a5531b71131866412b8c01c4f2a5393",
+      "size": 9288
+    },
+    "server/demo-registry/blobs/a0f80b14b7f4067f01402f3e86cf729d9438d7ec4292cfe7192f0dd3e31b9641": {
+      "sha256": "a0f80b14b7f4067f01402f3e86cf729d9438d7ec4292cfe7192f0dd3e31b9641",
+      "size": 19786
+    },
+    "server/demo-registry/blobs/acb0e657ee85e911c3d446baa2d67397add785058fa03f7336fbe14de26600e3": {
+      "sha256": "acb0e657ee85e911c3d446baa2d67397add785058fa03f7336fbe14de26600e3",
+      "size": 709
+    },
+    "server/demo-registry/blobs/d76d028131eb24eb561e3dd2708f5d05bf6cc63c52cc339a3f57e14834e324b3": {
+      "sha256": "d76d028131eb24eb561e3dd2708f5d05bf6cc63c52cc339a3f57e14834e324b3",
+      "size": 2362
+    },
+    "server/demo-registry/blobs/23bab580680ddbd0aa6aa71376982dace37888157aca72497d8e3f2cd64d9f80": {
+      "sha256": "23bab580680ddbd0aa6aa71376982dace37888157aca72497d8e3f2cd64d9f80",
+      "size": 20926
+    },
+    "server/demo-registry/blobs/7fc73eeec25d4b599270d207fc5b0bc51b0868662b52233f593aa6c88bb9506e": {
+      "sha256": "7fc73eeec25d4b599270d207fc5b0bc51b0868662b52233f593aa6c88bb9506e",
+      "size": 821
+    },
+    "server/demo-registry/checkpoints/cp-demo-baseline.json": {
+      "sha256": "4d5d9118dc08f7d0e919547ba95c506c9a8c16011755fa592a17d9801781fb1a",
+      "size": 352
+    },
+    "server/demo-registry/checkpoints/cp-demo-runtime-v0.8-1.json": {
+      "sha256": "780e469973008936a63046e0350795db6c2374787e4d3cfa1e03e7943f5d6fe1",
+      "size": 379
+    },
+    "server/demo-registry/checkpoints/cp-demo-sandbox.json": {
+      "sha256": "7978746d44cdeb005d6cd78a0a02ffc7aefa14e700a873401606a43dd073b334",
+      "size": 364
+    },
+    "server/demo-registry/checkpoints/cp-demo-runtime-v0.8-0.json": {
+      "sha256": "28908cc3234a7bd85fe9c1c0db79f5599c643c9a2ac1c1742f09c3d12eca0571",
+      "size": 373
+    },
+    "server/demo-registry/releases/demo-runtime-v0.8-0.json": {
+      "sha256": "ca299ed90dfc7f1503b4818ed3279e78021a90d988b0f2da09ac50d066ccd402",
+      "size": 361
+    },
+    "server/demo-registry/releases/demo-runtime-v0.8-1.json": {
+      "sha256": "32a33fe1c18c1c3e309729e21de429d29bd6319552522dd5fc202b1f896deb4a",
+      "size": 361
+    },
+    "server/demo-registry/releases/demo-baseline-v0.6.json": {
+      "sha256": "6b944e98ac7a0d7a2be1a0209c3635cb4d55cb76190986656ecd4b958c21b9c4",
+      "size": 375
+    },
+    "server/demo-registry/releases/demo-sandbox-v0.7.json": {
+      "sha256": "a594229fe61e3c7790000935641cae6d589cc216d9ee7675f92561ec050c9973",
+      "size": 364
+    },
+    "server/arc_poker_math/__pycache__/holdem.cpython-313.pyc": {
+      "sha256": "546a0ba51a7b0b8bc0258a96fa5b39d5063522692afa5253180b2e83d734f725",
+      "size": 11946
+    },
+    "server/arc_poker_math/__pycache__/__init__.cpython-313.pyc": {
+      "sha256": "ce3f72d6a44a29b1eb5eb560bad9ae09ea968e3c5ccee9dd8d0b9623ef77c954",
+      "size": 579
+    },
+    "datasets/cards_gold/cards_1317.jpg": {
+      "sha256": "2692663185967c18952e77d28145ed324d809463fd3758dfcc7c725841c378e4",
+      "size": 40226
+    },
+    "datasets/cards_gold/cards_1289.jpg": {
+      "sha256": "0f7f4257c9934633d61f8b61899fccffc20f0bda6b51fcb11cd2cf4d92fd6d6a",
+      "size": 35563
+    },
+    "datasets/cards_gold/cards_1315.jpg": {
+      "sha256": "c5fb72f2d55402dc5348855591ebbf5f8a9345c21071e8ad422f4ee2a9ef749c",
+      "size": 36413
+    },
+    "datasets/cards_gold/cards_1301.jpg": {
+      "sha256": "5a69f5dab55c73a8a5568227cc36fdc98d2bf3b8159263817a0a91bfc0a8ce12",
+      "size": 36415
+    },
+    "datasets/cards_gold/cards_1297.jpg": {
+      "sha256": "469b40a15325487e711c0efc11afb860c7eb9801cdb118a3caf901ee2ec19d36",
+      "size": 34173
+    },
+    "datasets/cards_gold/cards_1295.jpg": {
+      "sha256": "709bc9f27509f87a99108b08ae8d47a8d702685355524e1246765f13ac761502",
+      "size": 37454
+    },
+    "datasets/cards_gold/cards_1281.jpg": {
+      "sha256": "01ce823acb5a54e58d0a3fc234a3b7d450920d30b26f58bdef30e6cd4893382d",
+      "size": 32210
+    },
+    "datasets/cards_gold/cards_1307.jpg": {
+      "sha256": "c5a43ce6a8423a17271252e958a7a0836263ce552b7b39a91595a2fd62c14ff8",
+      "size": 38954
+    },
+    "datasets/cards_gold/cards_1319.jpg": {
+      "sha256": "26b2a1f5d03e46d45f19b82c771d59c96e9acd0052ffb7fa71f90ae67e5ce64b",
+      "size": 34092
+    },
+    "datasets/cards_gold/cards_1285.jpg": {
+      "sha256": "c54cf022ef76a6db31904a936771cb7db9b7179f1948f91a149bd307d573de39",
+      "size": 33779
+    },
+    "datasets/cards_gold/cards_1291.jpg": {
+      "sha256": "d14a97524c1abb06389bc56fd4d8a4b01c9104fb692131482b61fa371394118d",
+      "size": 37201
+    },
+    "datasets/cards_gold/gold.json": {
+      "sha256": "c6232f25351fd871fa38ac61449ea0a53a86ff6d9776a6d32e9e2c98cb0bc533",
+      "size": 3274
+    },
+    "datasets/capture_20261017/manifest.json": {
+      "sha256": "36a1d5466f3969f377d1e7184d6239f7be8c1e6a834092a0d7b7f94375ed3b7c",
+      "size": 9887
+    },
+    "datasets/money_gold/bank_1317.png": {
+      "sha256": "1e8e6ea67e4fdde997d0054835877dd7bcc7f5161d3277dcb1fdbd05fbc6856c",
+      "size": 10841
+    },
+    "datasets/money_gold/bank_1273.png": {
+      "sha256": "491c6245381a26b96ce365bb1ac0170bd872a6a3b5688089f1e470f70c59b5d7",
+      "size": 9904
+    },
+    "datasets/money_gold/bank_1301.png": {
+      "sha256": "c176607491a00b79f437504d88bce60b26395b886bdf4a58bc5dff21245f71bd",
+      "size": 10956
+    },
+    "datasets/money_gold/bank_1309.png": {
+      "sha256": "491c6245381a26b96ce365bb1ac0170bd872a6a3b5688089f1e470f70c59b5d7",
+      "size": 9904
+    },
+    "datasets/money_gold/bank_1281.png": {
+      "sha256": "491c6245381a26b96ce365bb1ac0170bd872a6a3b5688089f1e470f70c59b5d7",
+      "size": 9904
+    },
+    "datasets/money_gold/bank_1287.png": {
+      "sha256": "90e9b1561983dc409251bc92dc1cc5c228464c2595e91dce04125b8a36ab9c4d",
+      "size": 10870
+    },
+    "datasets/money_gold/bank_1299.png": {
+      "sha256": "eaedbbc2876040f0b7c7592faa7fc381b50539bf07af197332246a154e350a8a",
+      "size": 10904
+    },
+    "datasets/money_gold/annotations.json": {
+      "sha256": "fd9ceacdbfff0d6084c22ddb4a114fae49c970c0756a3457c37d4cc2df308b4a",
+      "size": 740
+    },
+    "datasets/money_gold/bank_1311.png": {
+      "sha256": "f592fbd332cf61aedf3ff122bad5250c496803c348cdbd2b2f10818641873515",
+      "size": 11012
+    },
+    "datasets/money_gold/bank_1295.png": {
+      "sha256": "c34c14202f21a188d72f2eb7f15f372d072c4444a6fe94df469db4551ea3577a",
+      "size": 10942
+    },
+    "datasets/money_gold/bank_1291.png": {
+      "sha256": "37e72a979e350aa03668d890c7d9f6c97b091f9232331cacdbabbe3338f3c0f1",
+      "size": 10955
+    },
+    "datasets/money_gold/bank_1267.png": {
+      "sha256": "cb7ef6e869a33b2308b7e06d4d822c93ad1d778925b6c8e15ab24b0812bbcb2f",
+      "size": 10668
+    },
+    "datasets/money_gold/bank_1279.png": {
+      "sha256": "7f9114dbbf8e4773ef0752d9df9ece5b1e44feb5c51a9edd39c76ff6df695e72",
+      "size": 10911
+    },
+    "datasets/money_gold/bank_1269.png": {
+      "sha256": "39492c397e0688418988d69cbdbed180b210aa7870068351d43268dd16fdf0af",
+      "size": 10906
+    },
+    "datasets/money_gold/bank_1327.png": {
+      "sha256": "2b022ad4f5a8d80e6e4865e4e754486dbe5100186cd162042ba0394f8abb8d6c",
+      "size": 10909
+    },
+    "datasets/money_gold/center_1263.png": {
+      "sha256": "8dc3047629b8d5ed92feb5c0d29a79f08e8c2c9395441420830b6bf6d18e39f8",
+      "size": 11057
+    },
+    "datasets/money_gold/bank_1289.png": {
+      "sha256": "cd1545486f7184ec399e4af1e203723cd8c962d4e7d52f098a16e2a5ebd79c75",
+      "size": 10901
+    },
+    "datasets/money_gold/bank_1293.png": {
+      "sha256": "37e72a979e350aa03668d890c7d9f6c97b091f9232331cacdbabbe3338f3c0f1",
+      "size": 10955
+    },
+    "datasets/money_gold/bank_1305.png": {
+      "sha256": "e9dd3fb9a056939ba2e6888ef53343e78428ed0491f4855428a34219c61c688d",
+      "size": 10998
+    },
+    "datasets/money_gold/bank_1283.png": {
+      "sha256": "05efd68064f582263385a9a54c3d14ad3455871b4d5b948816e7d7e8f0086ad5",
+      "size": 10999
+    },
+    "datasets/money_gold/bank_1313.png": {
+      "sha256": "a8dadf92a20a4908234e5b2194fbee8beaea32afe1699c73a39556c99975139a",
+      "size": 10833
+    },
+    "datasets/money_gold/bank_1263.png": {
+      "sha256": "5b721c66cff52b182825e8b4d9b006177f2b8080bbc58f0340f559fc2b52686c",
+      "size": 10734
+    },
+    "datasets/money_gold/bank_1339.png": {
+      "sha256": "4f5830b0c5ca8b4abd5e41751e554d58b66f6f304c0327c025016aa37a14fca2",
+      "size": 10805
+    },
+    "datasets/money_gold/bank_1315.png": {
+      "sha256": "f37422e61ffa696352f6334f721841246e453a75ae1ca1d1bca82c72a4ceb5dd",
+      "size": 10805
+    },
+    "datasets/money_gold/bank_1319.png": {
+      "sha256": "f592fbd332cf61aedf3ff122bad5250c496803c348cdbd2b2f10818641873515",
+      "size": 11012
+    },
+    "datasets/money_gold/bank_1307.png": {
+      "sha256": "e9dd3fb9a056939ba2e6888ef53343e78428ed0491f4855428a34219c61c688d",
+      "size": 10998
+    },
+    "datasets/money_gold/bank_1297.png": {
+      "sha256": "f592fbd332cf61aedf3ff122bad5250c496803c348cdbd2b2f10818641873515",
+      "size": 11012
+    },
+    "datasets/money_gold/bank_1303.png": {
+      "sha256": "c176607491a00b79f437504d88bce60b26395b886bdf4a58bc5dff21245f71bd",
+      "size": 10956
+    },
+    "datasets/money_gold/bank_1271.png": {
+      "sha256": "39492c397e0688418988d69cbdbed180b210aa7870068351d43268dd16fdf0af",
+      "size": 10906
+    },
+    "datasets/money_gold/bank_1285.png": {
+      "sha256": "65d2b3cafd35cc91129ab12494a6395775ced62c5ca19f9c05d23d5c4db688e3",
+      "size": 10646
+    },
+    "datasets/video_money_checks/023653_110.png": {
+      "sha256": "7810bd0d388cdb17b5ff53ec8f48ca2b17064773eca64ae077d66bea03157678",
+      "size": 9319
+    },
+    "datasets/video_money_checks/023653_160.png": {
+      "sha256": "eb1af9b6f4d084ff43cbd6adefa93da37566c250bf81025c334b076153b90720",
+      "size": 9063
+    },
+    "datasets/video_money_checks/011959_260.png": {
+      "sha256": "d6ddf829121a9ca8d8d71a5f4cf8485ca6559ca440cae91f03aaf67ba1db7011",
+      "size": 9049
+    },
+    "datasets/video_money_checks/023653_25.png": {
+      "sha256": "98ca491ff51fdbdf2ca72aed6d26666e3f3626fa2c70b71ce31198eb56ce111f",
+      "size": 9560
+    },
+    "datasets/video_money_checks/024504_210.png": {
+      "sha256": "f2f675fe8c1835691bc9932e736ad44c64698305cce5010637ffa6d1b7674d4d",
+      "size": 9124
+    },
+    "datasets/video_money_checks/023653_70.png": {
+      "sha256": "d2792ace91911bbef99d0c4925486e38ba5199605d30453725373cbf1cd4079a",
+      "size": 9251
+    },
+    "datasets/video_money_checks/024504_110.png": {
+      "sha256": "c702be3b0121779bd4f26e4eca835dd676cfecd3bfe5780cef8c4cf60e5d7316",
+      "size": 9914
+    },
+    "datasets/video_money_checks/011959_330.png": {
+      "sha256": "f65c9470ffb1ae69cb0a5e2271491ab8a27322045d64c5076be1653615cdc561",
+      "size": 8973
+    },
+    "datasets/video_money_checks/023653_210.png": {
+      "sha256": "dc1db86226d8a206d34fc903bb930c17bacb23964f99f864cae10d20403f16f8",
+      "size": 10638
+    },
+    "datasets/video_money_checks/011959_210.png": {
+      "sha256": "5fb33babb8acee20d93932ae8a1989f0e75e04fa886df38ec92531ee7cb914a9",
+      "size": 10845
+    },
+    "datasets/video_money_checks/011959_160.png": {
+      "sha256": "e7e6d99a324ddda4aafcead64678f3793653f79bf1865feb818887727ba4a34b",
+      "size": 10920
+    },
+    "datasets/video_money_checks/024504_330.png": {
+      "sha256": "ab3dc16ceefa1c66c26bd556940d63cc1544d776046b7ddac94af6de0df35853",
+      "size": 9748
+    },
+    "datasets/video_money_checks/011959_520.png": {
+      "sha256": "3c554a9a2aa53803a4bc13e36951ea33b7f8e42e857a528943f39f8283dbe54a",
+      "size": 9007
+    },
+    "datasets/video_money_checks/011959_70.png": {
+      "sha256": "00e9dff12791227138c1a76677162604147b3b22c9478eda41fdb0ee87093beb",
+      "size": 9050
+    },
+    "datasets/video_money_checks/011959_420.png": {
+      "sha256": "9ca41e1e61f9511d1eef7a4c85382126a5bc784a562793b2af1748322fc9d7a7",
+      "size": 9092
+    },
+    "datasets/video_money_checks/024504_25.png": {
+      "sha256": "419008316db3c0f885e9a0cb55c90ccea9793a0fee7d78b086997a89b260a4a4",
+      "size": 10802
+    },
+    "datasets/video_money_checks/gold.json": {
+      "sha256": "a26d714eae078f73a620f24df8d2ca2f62479437e1e21e83d2a45dec2965c32f",
+      "size": 1597
+    },
+    "datasets/capture_20261017/frames/long_0062.jpg": {
+      "sha256": "4339342c0e1f0a875844a171766c1e24952c75cfe4681216abaf4e364b502811",
+      "size": 152571
+    },
+    "datasets/capture_20261017/frames/long_0342.jpg": {
+      "sha256": "e219cab6ab92a58bde2d86089155556ec89ea298594f6f083d259665ede3de09",
+      "size": 154854
+    },
+    "datasets/capture_20261017/frames/long_0382.jpg": {
+      "sha256": "7d75cee1f8801c7d1129f766972826f8bf9d4b7445082453762b8ed390b18220",
+      "size": 156843
+    },
+    "datasets/capture_20261017/frames/long_0195.jpg": {
+      "sha256": "06b37b542a1f2086cc26e20e8a2683fe7c8877214d5fdc04a78a3c8676a1ad4f",
+      "size": 159266
+    },
+    "datasets/capture_20261017/frames/medium_0030.jpg": {
+      "sha256": "ba13f30be51bdd9b8463b8eb1c7e47dfccb6b44caed797bd6652bbed864bf460",
+      "size": 163043
+    },
+    "datasets/capture_20261017/frames/medium_0045.jpg": {
+      "sha256": "93d796682534d555f0c0e357326c91d20d5457ee0f6ff0e7c2e6cb06da4c5ff1",
+      "size": 153296
+    },
+    "datasets/capture_20261017/frames/medium_0135.jpg": {
+      "sha256": "5e8c454b53eb52e42f8cc386b7667cf90a8f7f0ddaff2d521fd953c60f8f8b3b",
+      "size": 148959
+    },
+    "datasets/capture_20261017/frames/short_0020.jpg": {
+      "sha256": "416e7113d6debda83e1151aafea05692999a732917900698461745df0e07023a",
+      "size": 93290
+    },
+    "datasets/capture_20261017/frames/long_0448.jpg": {
+      "sha256": "cc945e5e05056c545d10156dbe8473112e792b944c3f2f724ac04990bfb03334",
+      "size": 151169
+    },
+    "datasets/capture_20261017/frames/short_0023.jpg": {
+      "sha256": "fb6a265713c7b97b8817b452b5aa1256d77545b43b3a1e9a7db46c758fefe1b1",
+      "size": 178794
+    },
+    "datasets/capture_20261017/frames/short_0013.jpg": {
+      "sha256": "ee020f3f88df8f42a911d41c23de96475f1d9359716c868512e984ac671091bd",
+      "size": 113697
+    },
+    "datasets/capture_20261017/frames/medium_0227.jpg": {
+      "sha256": "8ebbdfa3d9a4bbe0bc1ee94620057270605f56fad61d2384ffa7bac812beb736",
+      "size": 161425
+    },
+    "datasets/capture_20261017/frames/long_0040.jpg": {
+      "sha256": "a968b8ec13a6fc3592f718ee99bcc7ee55e8dda74cf4df9e0dff427999602944",
+      "size": 146214
+    },
+    "datasets/capture_20261017/frames/medium_0240.jpg": {
+      "sha256": "b3adfde3fda014db4c942b699e3efe331bc8647b718cc9d9ba39739587a97285",
+      "size": 159806
+    },
+    "datasets/capture_20261017/frames/short_0000.jpg": {
+      "sha256": "e23c86b238391a6d077b1791c37eadca482f6579381cd22398fd3cbcfd426fd9",
+      "size": 140739
+    },
+    "datasets/capture_20261017/frames/long_0100.jpg": {
+      "sha256": "21f6d6f233cac299dd2a7eb499b8aadc4ddc394021db2dd6b1e47609f10d2938",
+      "size": 157600
+    },
+    "datasets/capture_20261017/frames/long_0330.jpg": {
+      "sha256": "f7960ebd1a8374987f2b93ddb9bd2cb28e1c0d001a5157d476834f8c7ccef7ab",
+      "size": 143774
+    },
+    "datasets/capture_20261017/frames/medium_0118.jpg": {
+      "sha256": "f46d13e1638b486ea89219a356c1927e886e9285b67bf5ec84b1c6765f23eb81",
+      "size": 167105
+    }
+  }
+}

@@ -1,0 +1,36 @@
+name: Android APK + offline checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  android-debug:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: android-actions/setup-android@v3
+      - name: Install required Android SDK
+        run: sdkmanager --install 'platforms;android-35' 'build-tools;35.0.0'
+      - uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.9'
+      - name: Audit lab configuration
+        run: python3 tools/android_preflight.py --strict
+      - name: Assemble and verify debug APK (signature, package, version, SHA-256)
+        run: bash tools/build_android_debug.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ai-remote-control-v2.11-debug-apk
+          path: |
+            artifacts/AI-Remote-Control-v2.11-PLAYER-LAB.apk
+            artifacts/AI-Remote-Control-v2.11-PLAYER-LAB.apk.sha256
+            artifacts/APK_ATTESTATION_v2.11.json
+          retention-days: 7
+          if-no-files-found: error

@@ -1,0 +1,24 @@
+{
+  "release": "v1.1",
+  "base": "v1.0",
+  "versioned_component": "arc_fixed_glyph_v1.1.0",
+  "status": "read_only_lab_candidate",
+  "android_apk_compiled": false,
+  "openai_live_api_verified": false,
+  "real_money_game_tested": false,
+  "compatibility": {
+    "android_contract": "unchanged",
+    "math_endpoint": "unchanged",
+    "rollback_system": "unchanged"
+  },
+  "sha256": {
+    "server/arc_vision/card_reader.py": "97fbf623a9fe6501e7f58171762b412e5a5771523d2fb50a9fc92ef9e82b1970",
+    "server/arc_vision/glyph_atlas.json": "b325c776c12cdae3b1bc62ad55e5b16a8e91640c9b16c04afa9dd65049ef47e6",
+    "server/arc_vision/benchmark_cards.py": "3729a66da176aa76cf3ca7ca6524c1ed8faefab48d37ad48fca07b2c7325a70f",
+    "server/arc_vision/make_private_fixtures.py": "1f2d52911c2c3eb4fb5f41c018be56f45b2dfae8332bd43e6f768bd14b756394",
+    "server/server.py": "b17e0ecde5d4f5c5dba46f6ad277e74c557d03ad93df2b80e0d8fbf074c38fa3",
+    "server/tests/test_card_reader_v11.py": "170013a48ddb003dcf5d44a730da6eabf4f9076948c9230c0eea5e8eb650df26",
+    "server/requirements-vision.txt": "44264d873d15066bd3222b6e649afa7ba882d1e1d361b0265762ccd9651354e7",
+    "datasets/cards_gold/gold.json": "c6232f25351fd871fa38ac61449ea0a53a86ff6d9776a6d32e9e2c98cb0bc533"
+  }
+}

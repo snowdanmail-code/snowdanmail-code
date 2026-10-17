@@ -1,0 +1,31 @@
+{
+  "product": "AI Remote Control GPT",
+  "version": "v1.9",
+  "release_type": "offline_source_release",
+  "parent_version": "v1.8",
+  "purpose": "network-resilient, privacy-preserving read-only observation",
+  "new_modules": [
+    "server/arc_telemetry/link_health.py",
+    "android/app/src/main/java/com/example/airemote/ObservationBackoff.kt"
+  ],
+  "new_tests": [
+    "server/tests/test_link_health_v19.py",
+    "android/tests_fast/ObservationBackoffTest.kt"
+  ],
+  "server_test_result": {
+    "passed": 310,
+    "failed": 0
+  },
+  "kotlin_test_suites": [
+    "FastCapturePolicyTest.kt",
+    "LatencyWindowTest.kt",
+    "ClientTraceWindowTest.kt",
+    "ObservationBackoffTest.kt"
+  ],
+  "phone_apk_built": false,
+  "openai_live_api_tested": false,
+  "real_money_execution_tested": false,
+  "github_repo_pushed": false,
+  "money_actions_enabled": false,
+  "previous_releases_preserved": true
+}

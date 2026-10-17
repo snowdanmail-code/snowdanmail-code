@@ -1,0 +1,18 @@
+{
+  "release": "v1.0",
+  "suite": "python unittest discover",
+  "tests_passed": 217,
+  "tests_failed": 0,
+  "android_apk_compiled": false,
+  "openai_live_call_tested": false,
+  "real_money_actions_enabled_in_new_code": false,
+  "perception_model_benchmark_completed": false,
+  "source_sha256": {
+    "server/arc_poker_math/holdem.py": "669e1673bd6f1497d8966be49ed98e5b18d5efa8eb59ca00e702bf13d5982dc4",
+    "server/arc_vision/consistency.py": "44902aed519b5522c0edf1f9e55de8c6debebc51ab35bf64cc0d5311bca1b6b1",
+    "server/arc_vision/timeline.py": "d88c958f46717878bd6c56a6e14317ceb6a1edc5206ea2bad6f50bf4476f4b75",
+    "server/server.py": "84cfe7181bbd579257bb718947df28ec711f6d9c6a9bd64c304f5c19d0567c54",
+    "server/tests/test_poker_math.py": "d2abf6ab43f0d3d12f96454f9e0de58ec64fc6ba2e48acd83ba16b3eb516af4c",
+    "server/tests/test_timeline.py": "b6a32bc7cd686f9d984f89fd44a4bc8f1d465a416c9180a59f4b2ef91219c252"
+  }
+}

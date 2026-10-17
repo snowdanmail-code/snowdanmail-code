@@ -1,0 +1,259 @@
+test_bool_count_rejected (test_agent.SandboxAgentTests.test_bool_count_rejected) ... ok
+test_coordinate_click_rejected (test_agent.SandboxAgentTests.test_coordinate_click_rejected) ... ok
+test_demo_second_step_finishes (test_agent.SandboxAgentTests.test_demo_second_step_finishes) ... ok
+test_fake_demo_has_no_internet_dependency (test_agent.SandboxAgentTests.test_fake_demo_has_no_internet_dependency) ... ok
+test_gpt_request_uses_schema_and_store_false (test_agent.SandboxAgentTests.test_gpt_request_uses_schema_and_store_false) ... ok
+test_injected_foreign_action_rejected (test_agent.SandboxAgentTests.test_injected_foreign_action_rejected) ... ok
+test_invalid_count_rejected (test_agent.SandboxAgentTests.test_invalid_count_rejected) ... ok
+test_invalid_model_result_returns_422 (test_agent.SandboxAgentTests.test_invalid_model_result_returns_422) ... ok
+test_invalid_reason_rejected (test_agent.SandboxAgentTests.test_invalid_reason_rejected) ... ok
+test_missing_action_rejected (test_agent.SandboxAgentTests.test_missing_action_rejected) ... ok
+test_missing_demo_state_rejected (test_agent.SandboxAgentTests.test_missing_demo_state_rejected) ... ok
+test_missing_image_rejected (test_agent.SandboxAgentTests.test_missing_image_rejected) ... ok
+test_not_dict_plan_rejected (test_agent.SandboxAgentTests.test_not_dict_plan_rejected) ... ok
+test_open_browser_rejected (test_agent.SandboxAgentTests.test_open_browser_rejected) ... ok
+test_openai_mock_path (test_agent.SandboxAgentTests.test_openai_mock_path) ... ok
+test_place_bet_rejected (test_agent.SandboxAgentTests.test_place_bet_rejected) ... ok
+test_post_to_analyze_not_agent_action (test_agent.SandboxAgentTests.test_post_to_analyze_not_agent_action) ... ok
+test_reason_truncated_to_200_chars (test_agent.SandboxAgentTests.test_reason_truncated_to_200_chars) ... ok
+test_repeat_touch_is_forced_to_finish (test_agent.SandboxAgentTests.test_repeat_touch_is_forced_to_finish) ... ok
+test_strict_schema_disallows_extra_actions (test_agent.SandboxAgentTests.test_strict_schema_disallows_extra_actions) ... ok
+test_unsupported_path_rejected (test_agent.SandboxAgentTests.test_unsupported_path_rejected) ... ok
+test_valid_finish_passthrough (test_agent.SandboxAgentTests.test_valid_finish_passthrough) ... ok
+test_valid_wait_passthrough (test_agent.SandboxAgentTests.test_valid_wait_passthrough) ... ok
+test_without_key_returns_explicit_demo_mode (test_agent.SandboxAgentTests.test_without_key_returns_explicit_demo_mode) ... ok
+test_wrong_request_rejected (test_agent.SandboxAgentTests.test_wrong_request_rejected) ... ok
+test_wrong_token_rejected (test_agent.SandboxAgentTests.test_wrong_token_rejected) ... ok
+test_hero_card_limit (test_lobby_agent.NavigationTests.test_hero_card_limit) ... ok
+test_impossible_transition_rejects (test_lobby_agent.NavigationTests.test_impossible_transition_rejects) ... ok
+test_lobby_to_table_path (test_lobby_agent.NavigationTests.test_lobby_to_table_path) ... ok
+test_low_confidence_stops_transition (test_lobby_agent.NavigationTests.test_low_confidence_stops_transition) ... ok
+test_deny_wrong_token (test_lobby_agent.PokerScreenApiTests.test_deny_wrong_token) ... ok
+test_invalid_screen_returns_422 (test_lobby_agent.PokerScreenApiTests.test_invalid_screen_returns_422) ... ok
+test_requires_api_key (test_lobby_agent.PokerScreenApiTests.test_requires_api_key) ... ok
+test_returns_lobby_only_no_gesture (test_lobby_agent.PokerScreenApiTests.test_returns_lobby_only_no_gesture) ... ok
+test_accept_nulls (test_lobby_agent.PokerScreenTests.test_accept_nulls) ... ok
+test_buyin_427_ratio (test_lobby_agent.PokerScreenTests.test_buyin_427_ratio) ... ok
+test_buyin_selected_above_max_denied (test_lobby_agent.PokerScreenTests.test_buyin_selected_above_max_denied) ... ok
+test_cheapest_first (test_lobby_agent.PokerScreenTests.test_cheapest_first) ... ok
+test_confidence_bounds (test_lobby_agent.PokerScreenTests.test_confidence_bounds) ... ok
+test_gpt_schema_has_no_actions (test_lobby_agent.PokerScreenTests.test_gpt_schema_has_no_actions) ... ok
+test_invalid_seats (test_lobby_agent.PokerScreenTests.test_invalid_seats) ... ok
+test_manifest_regions_in_bounds (test_lobby_agent.PokerScreenTests.test_manifest_regions_in_bounds) ... ok
+test_missing_big_blind_excluded (test_lobby_agent.PokerScreenTests.test_missing_big_blind_excluded) ... ok
+test_missing_field_rejected (test_lobby_agent.PokerScreenTests.test_missing_field_rejected) ... ok
+test_negative_bankroll_rejected (test_lobby_agent.PokerScreenTests.test_negative_bankroll_rejected) ... ok
+test_no_available_table_with_user_427 (test_lobby_agent.PokerScreenTests.test_no_available_table_with_user_427) ... ok
+test_observe_without_lobby_does_not_select (test_lobby_agent.PokerScreenTests.test_observe_without_lobby_does_not_select) ... ok
+test_occupied_excluded (test_lobby_agent.PokerScreenTests.test_occupied_excluded) ... ok
+test_omaha_excluded (test_lobby_agent.PokerScreenTests.test_omaha_excluded) ... ok
+test_rank_does_not_mutate_input (test_lobby_agent.PokerScreenTests.test_rank_does_not_mutate_input) ... ok
+test_rebuy_label_does_not_imply_on (test_lobby_agent.PokerScreenTests.test_rebuy_label_does_not_imply_on) ... ok
+test_reject_extra_model_command (test_lobby_agent.PokerScreenTests.test_reject_extra_model_command) ... ok
+test_unknown_bankroll_denies_selection (test_lobby_agent.PokerScreenTests.test_unknown_bankroll_denies_selection) ... ok
+test_cumulative_cap (test_poker.BudgetTests.test_cumulative_cap) ... ok
+test_reservation_and_replay (test_poker.BudgetTests.test_reservation_and_replay) ... ok
+test_session_expires (test_poker.BudgetTests.test_session_expires) ... ok
+test_step_cap (test_poker.BudgetTests.test_step_cap) ... ok
+test_wait_not_charged (test_poker.BudgetTests.test_wait_not_charged) ... ok
+test_duplicate_suppression (test_poker.MoreBudgetTests.test_duplicate_suppression) ... ok
+test_repeat_after_cooldown (test_poker.MoreBudgetTests.test_repeat_after_cooldown) ... ok
+test_call_denied_by_default (test_poker.PokerPlanTests.test_call_denied_by_default) ... ok
+test_call_under_cap (test_poker.PokerPlanTests.test_call_under_cap) ... ok
+test_confidence_too_low (test_poker.PokerPlanTests.test_confidence_too_low) ... ok
+test_extra_fields_rejected (test_poker.PokerPlanTests.test_extra_fields_rejected) ... ok
+test_nan_rejected (test_poker.PokerPlanTests.test_nan_rejected) ... ok
+test_not_poker (test_poker.PokerPlanTests.test_not_poker) ... ok
+test_not_your_turn (test_poker.PokerPlanTests.test_not_your_turn) ... ok
+test_obscured_wait (test_poker.PokerPlanTests.test_obscured_wait) ... ok
+test_overremaining (test_poker.PokerPlanTests.test_overremaining) ... ok
+test_raise_above_cap (test_poker.PokerPlanTests.test_raise_above_cap) ... ok
+test_string_amount_rejected (test_poker.PokerPlanTests.test_string_amount_rejected) ... ok
+test_sufficient_check (test_poker.PokerPlanTests.test_sufficient_check) ... ok
+test_unknown_street (test_poker.PokerPlanTests.test_unknown_street) ... ok
+test_actions_preflop_vpip_and_pfr (test_post_session_reviewer.TestReviewGate.test_actions_preflop_vpip_and_pfr) ... ok
+test_bad_close_confirmation (test_post_session_reviewer.TestReviewGate.test_bad_close_confirmation) ... ok
+test_bad_money (test_post_session_reviewer.TestReviewGate.test_bad_money) ... ok
+test_blind_only_not_vpip (test_post_session_reviewer.TestReviewGate.test_blind_only_not_vpip) ... ok
+test_correct_full_exit (test_post_session_reviewer.TestReviewGate.test_correct_full_exit) ... ok
+test_disconnect_invalidates (test_post_session_reviewer.TestReviewGate.test_disconnect_invalidates) ... ok
+test_exit_requested_not_enough (test_post_session_reviewer.TestReviewGate.test_exit_requested_not_enough) ... ok
+test_invalid_actions (test_post_session_reviewer.TestReviewGate.test_invalid_actions) ... ok
+test_live_is_blocked (test_post_session_reviewer.TestReviewGate.test_live_is_blocked) ... ok
+test_low_confidence_or_stale (test_post_session_reviewer.TestReviewGate.test_low_confidence_or_stale) ... ok
+test_non_finite_result_rejected (test_post_session_reviewer.TestReviewGate.test_non_finite_result_rejected) ... ok
+test_omaha_excluded (test_post_session_reviewer.TestReviewGate.test_omaha_excluded) ... ok
+test_other_tables_present (test_post_session_reviewer.TestReviewGate.test_other_tables_present) ... ok
+test_pot_odds (test_post_session_reviewer.TestReviewGate.test_pot_odds) ... ok
+test_rejoin_invalidates (test_post_session_reviewer.TestReviewGate.test_rejoin_invalidates) ... ok
+test_table_closed_but_not_verified_empty (test_post_session_reviewer.TestReviewGate.test_table_closed_but_not_verified_empty) ... ok
+test_corrupted_audit_blocks_runtime (test_runtime.ActiveReleaseTests.test_corrupted_audit_blocks_runtime) ... ok
+test_missing_activation_blocks (test_runtime.ActiveReleaseTests.test_missing_activation_blocks) ... ok
+test_modifying_blob_blocks_runtime (test_runtime.ActiveReleaseTests.test_modifying_blob_blocks_runtime) ... ok
+test_pinned_baseline (test_runtime.ActiveReleaseTests.test_pinned_baseline) ... ok
+test_production_rejects_unverified_lab (test_runtime.ActiveReleaseTests.test_production_rejects_unverified_lab) ... ok
+test_switch_back_restores_old_profile (test_runtime.ActiveReleaseTests.test_switch_back_restores_old_profile) ... ok
+test_switch_to_stricter_profile_at_runtime (test_runtime.ActiveReleaseTests.test_switch_to_stricter_profile_at_runtime) ... ok
+test_invalid_confidence_rejected (test_runtime.RuntimePolicyTests.test_invalid_confidence_rejected) ... ok
+test_money_actions_rejected (test_runtime.RuntimePolicyTests.test_money_actions_rejected) ... ok
+test_other_variants_rejected (test_runtime.RuntimePolicyTests.test_other_variants_rejected) ... ok
+test_policy_valid (test_runtime.RuntimePolicyTests.test_policy_valid) ... ok
+test_replay_analysis_rejected (test_runtime.RuntimePolicyTests.test_replay_analysis_rejected) ... ok
+test_unknown_policy_key (test_runtime.RuntimePolicyTests.test_unknown_policy_key) ... ok
+test_2_seated_exit_only_after_hand (test_runtime.StateMachineTests.test_2_seated_exit_only_after_hand) ... ok
+test_2_seated_flags_for_exit (test_runtime.StateMachineTests.test_2_seated_flags_for_exit) ... ok
+test_active_beyond_seated_rejected (test_runtime.StateMachineTests.test_active_beyond_seated_rejected) ... ok
+test_broken_numeric_fields (test_runtime.StateMachineTests.test_broken_numeric_fields) ... ok
+test_concurrent_sessions_independent (test_runtime.StateMachineTests.test_concurrent_sessions_independent) ... ok
+test_disconnected_blocks (test_runtime.StateMachineTests.test_disconnected_blocks) ... ok
+test_duplicate_rejected (test_runtime.StateMachineTests.test_duplicate_rejected) ... ok
+test_every_observation_is_non_executable (test_runtime.StateMachineTests.test_every_observation_is_non_executable) ... ok
+test_hand_in_lobby_rejected (test_runtime.StateMachineTests.test_hand_in_lobby_rejected) ... ok
+test_low_confidence_blocks (test_runtime.StateMachineTests.test_low_confidence_blocks) ... ok
+test_older_sequence_rejected (test_runtime.StateMachineTests.test_older_sequence_rejected) ... ok
+test_omaha_blocks (test_runtime.StateMachineTests.test_omaha_blocks) ... ok
+test_only_2_active_does_not_trigger_exit (test_runtime.StateMachineTests.test_only_2_active_does_not_trigger_exit) ... ok
+test_player_rejoins_cancels_flag (test_runtime.StateMachineTests.test_player_rejoins_cancels_flag) ... ok
+test_replay_blocks (test_runtime.StateMachineTests.test_replay_blocks) ... ok
+test_stable_2_frames (test_runtime.StateMachineTests.test_stable_2_frames) ... ok
+test_stale_frame_rejected (test_runtime.StateMachineTests.test_stale_frame_rejected) ... ok
+test_unknown_blocks (test_runtime.StateMachineTests.test_unknown_blocks) ... ok
+test_wrong_replay_marker_rejected (test_runtime.StateMachineTests.test_wrong_replay_marker_rejected) ... ok
+test_large_number_of_sessions_is_bounded (test_runtime_concurrency.Concurrency.test_large_number_of_sessions_is_bounded) ... ok
+test_parallel_sessions_do_not_corrupt_profile (test_runtime_concurrency.Concurrency.test_parallel_sessions_do_not_corrupt_profile) ... ok
+test_bad_observation_rejected (test_runtime_http.FrameHintHttp.test_bad_observation_rejected) ... ok
+test_gpt_screen_adapter_unknown_player_count (test_runtime_http.FrameHintHttp.test_gpt_screen_adapter_unknown_player_count) ... ok
+test_live_profile_switch_without_restart (test_runtime_http.FrameHintHttp.test_live_profile_switch_without_restart) ... ok
+test_local_jpeg_hint_response (test_runtime_http.FrameHintHttp.test_local_jpeg_hint_response) ... /mnt/data/AI-Remote-Control-v0.8/server/arc_runtime/frame_hints.py:23: DeprecationWarning: Image.Image.getdata is deprecated and will be removed in Pillow 14 (2027-10-15). Use get_flattened_data instead.
+  return [channel for rgb in im.getdata() for channel in rgb]
+ok
+test_no_lab_exposure_by_default (test_runtime_http.FrameHintHttp.test_no_lab_exposure_by_default) ... ok
+test_observation_replay_blocked (test_runtime_http.FrameHintHttp.test_observation_replay_blocked) ... ok
+test_observation_returns_no_executable_action (test_runtime_http.FrameHintHttp.test_observation_returns_no_executable_action) ... ok
+test_status_requires_auth (test_runtime_http.FrameHintHttp.test_status_requires_auth) ... ok
+test_status_uses_active_checkpoint (test_runtime_http.FrameHintHttp.test_status_uses_active_checkpoint) ... ok
+test_unauthorized_mutation_route (test_runtime_http.FrameHintHttp.test_unauthorized_mutation_route) ... ok
+test_bad_observation_rejected (test_runtime_http.RuntimeHttp.test_bad_observation_rejected) ... ok
+test_gpt_screen_adapter_unknown_player_count (test_runtime_http.RuntimeHttp.test_gpt_screen_adapter_unknown_player_count) ... ok
+test_live_profile_switch_without_restart (test_runtime_http.RuntimeHttp.test_live_profile_switch_without_restart) ... ok
+test_no_lab_exposure_by_default (test_runtime_http.RuntimeHttp.test_no_lab_exposure_by_default) ... ok
+test_observation_replay_blocked (test_runtime_http.RuntimeHttp.test_observation_replay_blocked) ... ok
+test_observation_returns_no_executable_action (test_runtime_http.RuntimeHttp.test_observation_returns_no_executable_action) ... ok
+test_status_requires_auth (test_runtime_http.RuntimeHttp.test_status_requires_auth) ... ok
+test_status_uses_active_checkpoint (test_runtime_http.RuntimeHttp.test_status_uses_active_checkpoint) ... ok
+test_unauthorized_mutation_route (test_runtime_http.RuntimeHttp.test_unauthorized_mutation_route) ... ok
+test_block_arbitrary_actions (test_server.IntegrationTests.test_block_arbitrary_actions) ... ok
+test_demo_image_roundtrip (test_server.IntegrationTests.test_demo_image_roundtrip) ... ok
+test_deny_without_token (test_server.IntegrationTests.test_deny_without_token) ... ok
+test_health (test_server.IntegrationTests.test_health) ... ok
+test_invalid_image (test_server.IntegrationTests.test_invalid_image) ... ok
+test_openai_client_wired (test_server.IntegrationTests.test_openai_client_wired) ... ok
+test_poker_armed_call_is_checked_and_counted (test_server.IntegrationTests.test_poker_armed_call_is_checked_and_counted) ... ok
+test_poker_denied_without_model_key (test_server.IntegrationTests.test_poker_denied_without_model_key) ... ok
+test_poker_no_real_action_without_arm_flag (test_server.IntegrationTests.test_poker_no_real_action_without_arm_flag) ... ok
+test_versions_endpoint_cannot_mutate (test_server.IntegrationTests.test_versions_endpoint_cannot_mutate) ... ok
+test_versions_readonly_requires_token_and_configuration (test_server.IntegrationTests.test_versions_readonly_requires_token_and_configuration) ... ok
+test_bad_profile (test_stream.HttpTests.test_bad_profile) ... ok
+test_demo_stream_receipt (test_stream.HttpTests.test_demo_stream_receipt) ... ok
+test_large_image_rejected (test_stream.HttpTests.test_large_image_rejected) ... ok
+test_mock_openai_and_readability_escalation (test_stream.HttpTests.test_mock_openai_and_readability_escalation) ... ok
+test_replay_blocked (test_stream.HttpTests.test_replay_blocked) ... ok
+test_stream_no_remote_commands (test_stream.HttpTests.test_stream_no_remote_commands) ... ok
+test_wrong_token (test_stream.HttpTests.test_wrong_token) ... ok
+test_analysis_clear (test_stream.MemoryTests.test_analysis_clear) ... ok
+test_bounded_history (test_stream.MemoryTests.test_bounded_history) ... ok
+test_drops_old_frames (test_stream.MemoryTests.test_drops_old_frames) ... ok
+test_first_frame_invoke_and_busy (test_stream.MemoryTests.test_first_frame_invoke_and_busy) ... ok
+test_invalid_response_refused (test_stream.MemoryTests.test_invalid_response_refused) ... ok
+test_model_budget (test_stream.MemoryTests.test_model_budget) ... ok
+test_rate_limit_then_continue (test_stream.MemoryTests.test_rate_limit_then_continue) ... ok
+test_suppressed_without_key (test_stream.MemoryTests.test_suppressed_without_key) ... ok
+test_policy_is_replaceable_and_no_real_bets (test_versions.DemoContracts.test_policy_is_replaceable_and_no_real_bets) ... ok
+test_audit_damage_blocks_further_write (test_versions.RegistryTests.test_audit_damage_blocks_further_write) ... ok
+test_audit_tamper_detected (test_versions.RegistryTests.test_audit_tamper_detected) ... ok
+test_blob_tampering_blocks (test_versions.RegistryTests.test_blob_tampering_blocks) ... ok
+test_default_fails_closed (test_versions.RegistryTests.test_default_fails_closed) ... ok
+test_draft_module_never_activated (test_versions.RegistryTests.test_draft_module_never_activated) ... ok
+test_failing_evidence_not_approved (test_versions.RegistryTests.test_failing_evidence_not_approved) ... ok
+test_immutable_artifact_same_bytes_accepted (test_versions.RegistryTests.test_immutable_artifact_same_bytes_accepted) ... ok
+test_incompatible_module_rollback_blocked (test_versions.RegistryTests.test_incompatible_module_rollback_blocked) ... ok
+test_missing_test_evidence_blocks_switch (test_versions.RegistryTests.test_missing_test_evidence_blocks_switch) ... ok
+test_model_pin_needs_explicit_verification (test_versions.RegistryTests.test_model_pin_needs_explicit_verification) ... ok
+test_multi_generation_restore (test_versions.RegistryTests.test_multi_generation_restore) ... ok
+test_no_file_path_traversal (test_versions.RegistryTests.test_no_file_path_traversal) ... ok
+test_no_mutation_when_unsafe (test_versions.RegistryTests.test_no_mutation_when_unsafe) ... ok
+test_production_gate_rejects_lab_only (test_versions.RegistryTests.test_production_gate_rejects_lab_only) ... ok
+test_registry_status (test_versions.RegistryTests.test_registry_status) ... ok
+test_two_thread_artifact_register (test_versions.RegistryTests.test_two_thread_artifact_register) ... ok
+test_unknown_artifact_blocks (test_versions.RegistryTests.test_unknown_artifact_blocks) ... ok
+test_unknown_test_report_fails (test_versions.RegistryTests.test_unknown_test_report_fails) ... ok
+test_abstains_on_ambiguous (test_visual_hints.VisualHintsTest.test_abstains_on_ambiguous) ... ok
+test_actual_signatures_file_is_valid (test_visual_hints.VisualHintsTest.test_actual_signatures_file_is_valid) ... ok
+test_matching_color (test_visual_hints.VisualHintsTest.test_matching_color) ... ok
+test_reject_bad_shape (test_visual_hints.VisualHintsTest.test_reject_bad_shape) ... ok
+
+----------------------------------------------------------------------
+Ran 191 tests in 4.008s
+
+OK
+[127.0.0.1] "POST /demo/next HTTP/1.1" 400 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 200 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 400 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 422 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 400 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 400 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 200 -
+[127.0.0.1] "POST /analyze HTTP/1.1" 400 -
+[127.0.0.1] "POST /action HTTP/1.1" 404 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 200 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 400 -
+[127.0.0.1] "POST /demo/next HTTP/1.1" 401 -
+[127.0.0.1] "POST /poker/screen HTTP/1.1" 401 -
+[127.0.0.1] "POST /poker/screen HTTP/1.1" 422 -
+[127.0.0.1] "POST /poker/screen HTTP/1.1" 503 -
+[127.0.0.1] "POST /poker/screen HTTP/1.1" 200 -
+[127.0.0.1] "POST /runtime/observe HTTP/1.1" 422 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 200 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 200 -
+[127.0.0.1] "POST /runtime/frame-hint HTTP/1.1" 200 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 503 -
+[127.0.0.1] "POST /runtime/observe HTTP/1.1" 200 -
+[127.0.0.1] "POST /runtime/observe HTTP/1.1" 200 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 401 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 200 -
+[127.0.0.1] "POST /runtime/activate HTTP/1.1" 404 -
+[127.0.0.1] "POST /runtime/rollback HTTP/1.1" 404 -
+[127.0.0.1] "POST /runtime/tap HTTP/1.1" 404 -
+[127.0.0.1] "POST /runtime/observe HTTP/1.1" 422 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 200 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 200 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 503 -
+[127.0.0.1] "POST /runtime/observe HTTP/1.1" 200 -
+[127.0.0.1] "POST /runtime/observe HTTP/1.1" 200 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 401 -
+[127.0.0.1] "GET /runtime/status HTTP/1.1" 200 -
+[127.0.0.1] "POST /runtime/activate HTTP/1.1" 404 -
+[127.0.0.1] "POST /runtime/rollback HTTP/1.1" 404 -
+[127.0.0.1] "POST /runtime/tap HTTP/1.1" 404 -
+[127.0.0.1] "POST /analyze HTTP/1.1" 400 -
+[127.0.0.1] "POST /tap HTTP/1.1" 404 -
+[127.0.0.1] "POST /analyze HTTP/1.1" 200 -
+[127.0.0.1] "POST /analyze HTTP/1.1" 401 -
+[127.0.0.1] "GET /health HTTP/1.1" 200 -
+[127.0.0.1] "POST /analyze HTTP/1.1" 400 -
+[127.0.0.1] "POST /analyze HTTP/1.1" 200 -
+[127.0.0.1] "POST /poker/decide HTTP/1.1" 200 -
+[127.0.0.1] "POST /poker/decide HTTP/1.1" 503 -
+[127.0.0.1] "POST /poker/decide HTTP/1.1" 200 -
+[127.0.0.1] "POST /versions HTTP/1.1" 404 -
+[127.0.0.1] "GET /versions HTTP/1.1" 401 -
+[127.0.0.1] "GET /versions HTTP/1.1" 503 -
+[127.0.0.1] "GET /versions HTTP/1.1" 200 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 400 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 200 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 400 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 200 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 200 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 409 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 200 -
+[127.0.0.1] "POST /stream/observe HTTP/1.1" 401 -

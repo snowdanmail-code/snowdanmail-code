@@ -1,0 +1,170 @@
+{
+  "purpose": "verification of hand evaluator on user supplied cards, not assessment of play",
+  "limitations": "Opponent cards uniformly random; no betting history or rake; not evidence of professional decisions.",
+  "examples": [
+    {
+      "source": "user screenshot hand 145849527",
+      "hero": [
+        "Qd",
+        "4d"
+      ],
+      "board": [
+        "2h",
+        "Ts",
+        "Qc",
+        "Jc",
+        "Qs"
+      ],
+      "made_hand": {
+        "category": "three_of_a_kind",
+        "rank_key": [
+          3,
+          12,
+          11,
+          10
+        ],
+        "hero": [
+          "Qd",
+          "4d"
+        ],
+        "board": [
+          "2h",
+          "Ts",
+          "Qc",
+          "Jc",
+          "Qs"
+        ]
+      },
+      "uniform_random_river_equity": {
+        "equity": 0.9116161616161617,
+        "win_probability": 0.897979797979798,
+        "tie_probability": 0.02727272727272727,
+        "loss_probability": 0.07474747474747474,
+        "samples": 990,
+        "method": "exact_river",
+        "assumption": "uniform_random_opponent_not_real_player_range",
+        "hero": [
+          "Qd",
+          "4d"
+        ],
+        "board": [
+          "2h",
+          "Ts",
+          "Qc",
+          "Jc",
+          "Qs"
+        ],
+        "action": null
+      }
+    },
+    {
+      "source": "user screenshot hand 145849582",
+      "hero": [
+        "5h",
+        "7h"
+      ],
+      "board": [
+        "3s",
+        "5d",
+        "Js",
+        "3d",
+        "As"
+      ],
+      "made_hand": {
+        "category": "two_pair",
+        "rank_key": [
+          2,
+          5,
+          3,
+          14
+        ],
+        "hero": [
+          "5h",
+          "7h"
+        ],
+        "board": [
+          "3s",
+          "5d",
+          "Js",
+          "3d",
+          "As"
+        ]
+      },
+      "uniform_random_river_equity": {
+        "equity": 0.5409090909090909,
+        "win_probability": 0.51010101010101,
+        "tie_probability": 0.06161616161616162,
+        "loss_probability": 0.42828282828282827,
+        "samples": 990,
+        "method": "exact_river",
+        "assumption": "uniform_random_opponent_not_real_player_range",
+        "hero": [
+          "5h",
+          "7h"
+        ],
+        "board": [
+          "3s",
+          "5d",
+          "Js",
+          "3d",
+          "As"
+        ],
+        "action": null
+      }
+    },
+    {
+      "source": "user screenshot hand 145823283",
+      "hero": [
+        "Qc",
+        "Qs"
+      ],
+      "board": [
+        "Qd",
+        "2s",
+        "Ks",
+        "4c",
+        "Kc"
+      ],
+      "made_hand": {
+        "category": "full_house",
+        "rank_key": [
+          6,
+          12,
+          13
+        ],
+        "hero": [
+          "Qc",
+          "Qs"
+        ],
+        "board": [
+          "Qd",
+          "2s",
+          "Ks",
+          "4c",
+          "Kc"
+        ]
+      },
+      "uniform_random_river_equity": {
+        "equity": 0.9848484848484849,
+        "win_probability": 0.9848484848484849,
+        "tie_probability": 0.0,
+        "loss_probability": 0.015151515151515152,
+        "samples": 990,
+        "method": "exact_river",
+        "assumption": "uniform_random_opponent_not_real_player_range",
+        "hero": [
+          "Qc",
+          "Qs"
+        ],
+        "board": [
+          "Qd",
+          "2s",
+          "Ks",
+          "4c",
+          "Kc"
+        ],
+        "action": null
+      }
+    }
+  ]
+}

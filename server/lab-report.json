@@ -1,0 +1,22 @@
+{
+  "active": {
+    "activated_utc": "2026-10-16T23:27:08+00:00",
+    "checkpoint_id": "cp-demo-baseline",
+    "release_hash": "6b944e98ac7a0d7a2be1a0209c3635cb4d55cb76190986656ecd4b958c21b9c4",
+    "release_id": "demo-baseline-v0.6"
+  },
+  "checkpoints": [
+    "cp-demo-baseline",
+    "cp-demo-sandbox"
+  ],
+  "artifact_count": 12,
+  "audit": {
+    "ok": true,
+    "events": 18,
+    "tip": "330d44e73ca26daa7bddb95ac12781290b6a7732a7f8134ba7bb42fd811a00a5"
+  },
+  "demonstrated_roundtrip": {
+    "first": "cp-demo-sandbox",
+    "restored": "cp-demo-baseline"
+  }
+}

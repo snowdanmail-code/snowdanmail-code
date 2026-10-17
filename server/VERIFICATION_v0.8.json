@@ -1,0 +1,17 @@
+{
+  "release": "0.8.0",
+  "status": "laboratory_pass",
+  "unit_integration_tests": 191,
+  "runtime_seconds": 4.008,
+  "test_result": "OK",
+  "android_apk_compiled": false,
+  "android_sdk_available": false,
+  "live_openai_tested": false,
+  "real_money_integration_tested": false,
+  "offline_vision_evaluation": "11/19 agreed with manual scene labels; 8 abstentions, dataset overlap / small sample",
+  "rollback_cycle_completed": true,
+  "included_media": [
+    "low_resolution_color_fingerprints_only"
+  ],
+  "live_money_actions": "not_available_in_v08_runtime_endpoints"
+}

@@ -1,0 +1,38 @@
+{
+  "server": {
+    "tests": 366,
+    "passed": true
+  },
+  "auth": {
+    "tests": 44,
+    "passed": true
+  },
+  "strategy": {
+    "tests": 18,
+    "passed": true
+  },
+  "tools": {
+    "tests": 16,
+    "passed": true
+  },
+  "kotlin_operator": {
+    "checks": 9,
+    "passed": true
+  },
+  "kotlin_guard": {
+    "checks": 12,
+    "passed": true
+  },
+  "android_preflight": {
+    "status": "PASS",
+    "errors": [],
+    "warnings": [
+      "No gradle-wrapper.jar; CI uses setup-gradle 8.9; for local use install Gradle 8.9"
+    ],
+    "android_sdk_available_here": false,
+    "is_apk_build": false
+  },
+  "apk_built": false,
+  "chatgpt_plus_authorized": false,
+  "on_device_tested": false
+}
