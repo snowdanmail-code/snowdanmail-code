@@ -124,9 +124,14 @@ public final class MainActivity extends Activity {
       else{
         s.append("\nTRANSPORT_VPN: ").append(cap.hasTransport(NetworkCapabilities.TRANSPORT_VPN)?"ДА":"НЕТ");
         s.append("\nNET_CAPABILITY_NOT_VPN: ").append(cap.hasCapability(NetworkCapabilities.NET_CAPABILITY_NOT_VPN)?"ДА":"НЕТ");
-        s.append("\nТипы транспорта: ");int[] t=cap.getTransportTypes();
-        for(int i=0;i<t.length;i++){if(i>0)s.append(", ");s.append(t[i]);}
-        if(t.length==0)s.append("нет");
+        s.append("\nТипы транспорта: ");
+        boolean any=false;
+        for(int i=0;i<=7;i++){
+          try{
+            if(cap.hasTransport(i)){if(any)s.append(", ");s.append(i);any=true;}
+          }catch(IllegalArgumentException ignored){}
+        }
+        if(!any)s.append("нет");
       }
     }catch(Exception e){s.append("\nОшибка сети: ").append(e.getClass().getSimpleName());}
     try{
