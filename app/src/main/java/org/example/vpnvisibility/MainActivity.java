@@ -55,7 +55,6 @@ public final class MainActivity extends Activity {
     private Button action(String label, Runnable callback) {
         Button b = new Button(this);
         b.setText(label);
-        b.setTextAllCaps(false);
         b.setTextColor(FG);
         b.setTextSize(15);
         b.setBackground(shape(ACCENT, 12));
